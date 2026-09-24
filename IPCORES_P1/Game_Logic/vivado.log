@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Sep 21 09:09:57 2026
+# Process ID: 14816
+# Current directory: C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/Game_Logic
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8188 C:\Users\Lorenzo\OneDrive\Documentos\PRO_SEP\P1\P1\IPCORES_P1\Game_Logic\Game_Logic.xpr
+# Log file: C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/Game_Logic/vivado.log
+# Journal file: C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/Game_Logic\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/Game_Logic/Game_Logic.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/Game_Logic' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/Game_Logic/Game_Logic.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1060.836 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 21 09:23:24 2026...

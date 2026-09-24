@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Sep 23 13:10:01 2026" VIVADOVERSION="2020.1">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.2" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Btn_Debouncer_0" PORT="clk"/>
+        <CONNECTION INSTANCE="StateMachine_P1_0" PORT="clk"/>
+        <CONNECTION INSTANCE="simon_says_0" PORT="clk"/>
+        <CONNECTION INSTANCE="RNG_0" PORT="clk"/>
+        <CONNECTION INSTANCE="Sequence_Memory_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="btn" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_btn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Btn_Debouncer_0" PORT="button"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="simon_says_0_leds">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="simon_says_0" PORT="leds"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="StateMachine_P1_0" PORT="sw"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="3" FULLNAME="/Btn_Debouncer_0" HWVERSION="1.0" INSTANCE="Btn_Debouncer_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Btn_Debouncer" VLNV="xilinx.com:user:Btn_Debouncer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Btn_Debouncer_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="button" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_btn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="btn_deb" RIGHT="0" SIGIS="undef" SIGNAME="Btn_Debouncer_0_btn_deb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StateMachine_P1_0" PORT="btn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/Mult2_0" HWVERSION="1.0" INSTANCE="Mult2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mult2" VLNV="xilinx.com:user:Mult2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Mult2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="selector" SIGIS="undef" SIGNAME="StateMachine_P1_0_ready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StateMachine_P1_0" PORT="ready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="in1" RIGHT="0" SIGIS="undef" SIGNAME="simon_says_0_mem_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="simon_says_0" PORT="mem_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="in2" RIGHT="0" SIGIS="undef" SIGNAME="RNG_0_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RNG_0" PORT="addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="out1" RIGHT="0" SIGIS="undef" SIGNAME="Mult2_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Sequence_Memory_0" PORT="addr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="8" FULLNAME="/RNG_0" HWVERSION="1.0" INSTANCE="RNG_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RNG" VLNV="xilinx.com:user:RNG:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="MEMORY_SIZE" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_RNG_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ready" SIGIS="undef" SIGNAME="StateMachine_P1_0_ready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StateMachine_P1_0" PORT="ready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="rand_led" RIGHT="0" SIGIS="undef" SIGNAME="RNG_0_rand_led">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Sequence_Memory_0" PORT="data_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="addr" RIGHT="0" SIGIS="undef" SIGNAME="RNG_0_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mult2_0" PORT="in2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/Sequence_Memory_0" HWVERSION="1.0" INSTANCE="Sequence_Memory_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Sequence_Memory" VLNV="xilinx.com:user:Sequence_Memory:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="MEM_LEN" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Sequence_Memory_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="io" SIGIS="undef" SIGNAME="StateMachine_P1_0_ready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StateMachine_P1_0" PORT="ready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="RNG_0_rand_led">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RNG_0" PORT="rand_led"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="addr" RIGHT="0" SIGIS="undef" SIGNAME="Mult2_0_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mult2_0" PORT="out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="Sequence_Memory_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="simon_says_0" PORT="data_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="10" FULLNAME="/StateMachine_P1_0" HWVERSION="1.0" INSTANCE="StateMachine_P1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StateMachine_P1" VLNV="xilinx.com:user:StateMachine_P1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_StateMachine_P1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="btn" RIGHT="0" SIGIS="undef" SIGNAME="Btn_Debouncer_0_btn_deb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Btn_Debouncer_0" PORT="btn_deb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset_game" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="simon_says_0_back_to_menu">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="simon_says_0" PORT="back_to_menu"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="game_type" RIGHT="0" SIGIS="undef" SIGNAME="StateMachine_P1_0_game_type">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="simon_says_0" PORT="difficult"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="controls" RIGHT="0" SIGIS="undef" SIGNAME="StateMachine_P1_0_controls">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="simon_says_0" PORT="btn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ready" SIGIS="undef" SIGNAME="StateMachine_P1_0_ready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mult2_0" PORT="selector"/>
+            <CONNECTION INSTANCE="RNG_0" PORT="ready"/>
+            <CONNECTION INSTANCE="Sequence_Memory_0" PORT="io"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/simon_says_0" HWVERSION="1.0" INSTANCE="simon_says_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="simon_says" VLNV="xilinx.com:user:simon_says:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="RAM_LENGTH" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_simon_says_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="difficult" RIGHT="0" SIGIS="undef" SIGNAME="StateMachine_P1_0_game_type">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StateMachine_P1_0" PORT="game_type"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="btn" RIGHT="0" SIGIS="undef" SIGNAME="StateMachine_P1_0_controls">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StateMachine_P1_0" PORT="controls"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="leds" RIGHT="0" SIGIS="undef" SIGNAME="simon_says_0_leds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="Sequence_Memory_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Sequence_Memory_0" PORT="data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="mem_addr" RIGHT="0" SIGIS="undef" SIGNAME="simon_says_0_mem_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mult2_0" PORT="in1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="back_to_menu" SIGIS="undef" SIGNAME="simon_says_0_back_to_menu">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StateMachine_P1_0" PORT="reset_game"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

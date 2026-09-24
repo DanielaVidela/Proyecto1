@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Sep 23 08:28:25 2026
+# Process ID: 2064
+# Current directory: C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/simon_says_v0.1/simon_says
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20424 C:\Users\Lorenzo\OneDrive\Documentos\PRO_SEP\P1\P1\IPCORES_P1\simon_says_v0.1\simon_says\simon_says.xpr
+# Log file: C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/simon_says_v0.1/simon_says/vivado.log
+# Journal file: C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/simon_says_v0.1/simon_says\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/simon_says_v0.1/simon_says/simon_says.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/simon_says_v0.1/simon_says'
+INFO: [Project 1-313] Project file moved from 'C:/Users/sbast/Desktop/PROYECTO01/IPCores/simon_says' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/Zybo-Z7-Master.xdc', nor could it be found using path 'C:/Users/sbast/Desktop/PROYECTO01/Zybo-Z7-Master.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1060.676 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir c:/users/lorenzo/onedrive/documentos/pro_sep/p1/p1/ipcores_p1 -vendor xilinx.com -library user -taxonomy /UserIP
+CRITICAL WARNING: [IP_Flow 19-4635] Port 'mem_addr': VHDL port type 'integer' is not supported in this release.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+CRITICAL WARNING: [IP_Flow 19-530] File Group 'xilinx_anylanguagesynthesis (Synthesis)': Component file 'Zybo-Z7-Master.xdc' (c:/users/lorenzo/onedrive/documentos/pro_sep/p1/p1/ipcores_p1/Zybo-Z7-Master.xdc) does not exist.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/users/lorenzo/onedrive/documentos/pro_sep/p1/p1/ipcores_p1/component.xml' ignored by IP packager.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  c:/users/lorenzo/onedrive/documentos/pro_sep/p1/p1/ipcores_p1 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/lorenzo/onedrive/documentos/pro_sep/p1/p1/ipcores_p1'.
+export_ip_user_files -of_objects  [get_files C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/Zybo-Z7-Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/Zybo-Z7-Master.xdc
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/users/lorenzo/onedrive/documentos/pro_sep/p1/p1/ipcores_p1/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_anylanguagesynthesis (Synthesis)': File 'c:/users/lorenzo/onedrive/documentos/pro_sep/p1/p1/ipcores_p1/Zybo-Z7-Master.xdc' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/users/lorenzo/onedrive/documentos/pro_sep/p1/p1/ipcores_p1
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/lorenzo/onedrive/documentos/pro_sep/p1/p1/ipcores_p1'
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 23 09:38:53 2026...

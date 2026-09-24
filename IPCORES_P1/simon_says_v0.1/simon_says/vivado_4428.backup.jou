@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Sep 23 13:17:15 2026
+# Process ID: 4428
+# Current directory: C:/Users/sbast/Desktop/P1_2.0/P1/IPCORES_P1/simon_says_v0.1/simon_says
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20240 C:\Users\sbast\Desktop\P1_2.0\P1\IPCORES_P1\simon_says_v0.1\simon_says\simon_says.xpr
+# Log file: C:/Users/sbast/Desktop/P1_2.0/P1/IPCORES_P1/simon_says_v0.1/simon_says/vivado.log
+# Journal file: C:/Users/sbast/Desktop/P1_2.0/P1/IPCORES_P1/simon_says_v0.1/simon_says\vivado.jou
+#-----------------------------------------------------------
+start_gui
+oopen_project C:/Users/sbast/Desktop/P1_2.0/P1/IPCORES_P1/simon_says_v0.1/simon_says/simon_says.xpruupdate_compile_order -fileset sources_1

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Sep 23 12:52:18 2026
+# Process ID: 27812
+# Current directory: C:/Users/sbast/Downloads/P1_2.0/P1/Proy1_SEP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27104 C:\Users\sbast\Downloads\P1_2.0\P1\Proy1_SEP\Proy1_SEP.xpr
+# Log file: C:/Users/sbast/Downloads/P1_2.0/P1/Proy1_SEP/vivado.log
+# Journal file: C:/Users/sbast/Downloads/P1_2.0/P1/Proy1_SEP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sbast/Downloads/P1_2.0/P1/Proy1_SEP/Proy1_SEP.xpr
+update_compile_order -fileset sources_1

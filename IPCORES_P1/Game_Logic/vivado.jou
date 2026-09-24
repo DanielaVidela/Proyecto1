@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Sep 21 09:09:57 2026
+# Process ID: 14816
+# Current directory: C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/Game_Logic
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8188 C:\Users\Lorenzo\OneDrive\Documentos\PRO_SEP\P1\P1\IPCORES_P1\Game_Logic\Game_Logic.xpr
+# Log file: C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/Game_Logic/vivado.log
+# Journal file: C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/Game_Logic\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/Game_Logic/Game_Logic.xpr
+update_compile_order -fileset sources_1

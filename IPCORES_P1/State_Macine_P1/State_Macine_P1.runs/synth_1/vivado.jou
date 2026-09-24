@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Sep 22 19:22:44 2026
+# Process ID: 13216
+# Current directory: C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.runs/synth_1
+# Command line: vivado.exe -log StateMachine_P1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source StateMachine_P1.tcl
+# Log file: C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.runs/synth_1/StateMachine_P1.vds
+# Journal file: C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source StateMachine_P1.tcl -notrace
