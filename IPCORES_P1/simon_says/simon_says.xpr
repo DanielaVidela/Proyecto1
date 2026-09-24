@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/simon_says_v0.1/simon_says/simon_says.xpr">
+<Project Version="7" Minor="49" Path="C:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/simon_says/simon_says.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="fcd2d9ac382c490ea6da9b75fac4358f"/>
@@ -81,7 +81,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../../../users/lorenzo/onedrive/documentos/pro_sep/p1/p1/ipcores_p1/component.xml">
+      <File Path="$PSRCDIR/sources_1/new/component.xml">
         <FileInfo SFType="IPXACT"/>
       </File>
       <Config>

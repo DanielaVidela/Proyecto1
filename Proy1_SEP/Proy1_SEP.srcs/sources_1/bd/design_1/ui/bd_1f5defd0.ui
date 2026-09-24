@@ -11,10 +11,10 @@ preplace portBus led -pg 1 -lvl 7 -x 1590 -y 70 -defaultsOSRD
 preplace portBus sw -pg 1 -lvl 0 -x -10 -y 170 -defaultsOSRD
 preplace inst Btn_Debouncer_0 -pg 1 -lvl 1 -x 130 -y 100 -defaultsOSRD
 preplace inst StateMachine_P1_0 -pg 1 -lvl 2 -x 390 -y 160 -defaultsOSRD
-preplace inst simon_says_0 -pg 1 -lvl 6 -x 1430 -y 90 -defaultsOSRD
 preplace inst Mult2_0 -pg 1 -lvl 4 -x 880 -y 160 -defaultsOSRD
 preplace inst RNG_0 -pg 1 -lvl 3 -x 650 -y 170 -defaultsOSRD
 preplace inst Sequence_Memory_0 -pg 1 -lvl 5 -x 1140 -y 360 -defaultsOSRD
+preplace inst simon_says_0 -pg 1 -lvl 6 -x 1430 -y 90 -defaultsOSRD
 preplace netloc clk_0_1 1 0 6 10 30 250 60 530 60 NJ 60 1010 60 NJ
 preplace netloc RNG_0_rand_led 1 3 2 750 50 1000J
 preplace netloc Btn_Debouncer_0_btn_deb 1 1 1 240 100n
