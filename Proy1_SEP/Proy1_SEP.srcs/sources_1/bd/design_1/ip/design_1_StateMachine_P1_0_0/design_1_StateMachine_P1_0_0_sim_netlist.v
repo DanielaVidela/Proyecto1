@@ -1,162 +1,16 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Wed Sep 23 12:42:06 2026
-// Host        : sebastian-pc running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top design_1_StateMachine_P1_0_0 -prefix
-//               design_1_StateMachine_P1_0_0_ design_1_StateMachine_P1_0_0_sim_netlist.v
+// Date        : Thu Sep 24 21:55:28 2026
+// Host        : DESKTOP-5QP58O6 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim {c:/Users/user/Documents/Proyectos
+//               vivado/P1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_StateMachine_P1_0_0/design_1_StateMachine_P1_0_0_sim_netlist.v}
 // Design      : design_1_StateMachine_P1_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
-
-module design_1_StateMachine_P1_0_0_StateMachine_P1
-   (ready,
-    controls,
-    clk,
-    btn,
-    sw,
-    reset_game);
-  output ready;
-  output [3:0]controls;
-  input clk;
-  input [3:0]btn;
-  input [3:0]sw;
-  input reset_game;
-
-  wire [3:0]btn;
-  wire clk;
-  wire [3:0]controls;
-  wire [1:0]\^nxt_state ;
-  wire [1:0]nxt_state__0;
-  wire nxt_state_n_0;
-  wire ready;
-  wire ready__0_n_0;
-  wire \ready_inferred__0/i__n_0 ;
-  wire reset_game;
-  wire [1:0]state;
-  wire [3:0]sw;
-
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT4 #(
-    .INIT(16'h3808)) 
-    \controls[0]_INST_0 
-       (.I0(btn[0]),
-        .I1(state[0]),
-        .I2(state[1]),
-        .I3(sw[0]),
-        .O(controls[0]));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT4 #(
-    .INIT(16'h3808)) 
-    \controls[1]_INST_0 
-       (.I0(btn[1]),
-        .I1(state[0]),
-        .I2(state[1]),
-        .I3(sw[1]),
-        .O(controls[1]));
-  LUT4 #(
-    .INIT(16'h3808)) 
-    \controls[2]_INST_0 
-       (.I0(btn[2]),
-        .I1(state[0]),
-        .I2(state[1]),
-        .I3(sw[2]),
-        .O(controls[2]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT4 #(
-    .INIT(16'h3808)) 
-    \controls[3]_INST_0 
-       (.I0(btn[3]),
-        .I1(state[0]),
-        .I2(state[1]),
-        .I3(sw[3]),
-        .O(controls[3]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT4 #(
-    .INIT(16'hFEA4)) 
-    nxt_state
-       (.I0(state[1]),
-        .I1(btn[3]),
-        .I2(state[0]),
-        .I3(reset_game),
-        .O(nxt_state_n_0));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \nxt_state_reg[0] 
-       (.CLR(1'b0),
-        .D(nxt_state__0[0]),
-        .G(nxt_state_n_0),
-        .GE(1'b1),
-        .Q(\^nxt_state [0]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT4 #(
-    .INIT(16'h4D48)) 
-    \nxt_state_reg[0]_i_1 
-       (.I0(state[0]),
-        .I1(reset_game),
-        .I2(state[1]),
-        .I3(btn[3]),
-        .O(nxt_state__0[0]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \nxt_state_reg[1] 
-       (.CLR(1'b0),
-        .D(nxt_state__0[1]),
-        .G(nxt_state_n_0),
-        .GE(1'b1),
-        .Q(\^nxt_state [1]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT4 #(
-    .INIT(16'h484D)) 
-    \nxt_state_reg[1]_i_1 
-       (.I0(state[0]),
-        .I1(reset_game),
-        .I2(state[1]),
-        .I3(btn[3]),
-        .O(nxt_state__0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT3 #(
-    .INIT(8'h02)) 
-    ready__0
-       (.I0(btn[3]),
-        .I1(state[0]),
-        .I2(state[1]),
-        .O(ready__0_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT3 #(
-    .INIT(8'hFE)) 
-    \ready_inferred__0/i_ 
-       (.I0(state[1]),
-        .I1(state[0]),
-        .I2(btn[3]),
-        .O(\ready_inferred__0/i__n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    ready_reg
-       (.CLR(1'b0),
-        .D(ready__0_n_0),
-        .G(\ready_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(ready));
-  FDRE \state_reg[0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\^nxt_state [0]),
-        .Q(state[0]),
-        .R(1'b0));
-  FDRE \state_reg[1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\^nxt_state [1]),
-        .Q(state[1]),
-        .R(1'b0));
-endmodule
 
 (* CHECK_LICENSE_TYPE = "design_1_StateMachine_P1_0_0,StateMachine_P1,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
 (* x_core_info = "StateMachine_P1,Vivado 2020.1" *) 
@@ -177,25 +31,244 @@ module design_1_StateMachine_P1_0_0
   output [3:0]controls;
   output ready;
 
-  wire \<const0> ;
   wire [3:0]btn;
   wire clk;
   wire [3:0]controls;
+  wire [1:0]game_type;
   wire ready;
   wire reset_game;
   wire [3:0]sw;
 
-  assign game_type[1] = \<const0> ;
-  assign game_type[0] = \<const0> ;
-  GND GND
-       (.G(\<const0> ));
   design_1_StateMachine_P1_0_0_StateMachine_P1 U0
        (.btn(btn),
         .clk(clk),
         .controls(controls),
+        .game_type(game_type),
         .ready(ready),
         .reset_game(reset_game),
         .sw(sw));
+endmodule
+
+(* ORIG_REF_NAME = "StateMachine_P1" *) 
+module design_1_StateMachine_P1_0_0_StateMachine_P1
+   (ready,
+    game_type,
+    controls,
+    clk,
+    btn,
+    reset_game,
+    sw);
+  output ready;
+  output [1:0]game_type;
+  output [3:0]controls;
+  input clk;
+  input [3:0]btn;
+  input reset_game;
+  input [3:0]sw;
+
+  wire [3:0]btn;
+  wire clk;
+  wire [3:0]controls;
+  wire [1:0]game_type;
+  wire [1:0]game_type_r;
+  wire \game_type_r_reg[0]_i_1_n_0 ;
+  wire \game_type_r_reg[1]_i_1_n_0 ;
+  wire \game_type_r_reg[1]_i_2_n_0 ;
+  wire [1:0]nxt_state;
+  wire [1:0]nxt_state__0;
+  wire \nxt_state_reg[1]_i_2_n_0 ;
+  wire \nxt_state_reg[1]_i_3_n_0 ;
+  wire ready;
+  wire ready_reg_i_1_n_0;
+  wire ready_reg_i_2_n_0;
+  wire reset_game;
+  wire [1:0]state;
+  wire [3:0]sw;
+
+  LUT4 #(
+    .INIT(16'h3808)) 
+    \controls[0]_INST_0 
+       (.I0(btn[0]),
+        .I1(state[0]),
+        .I2(state[1]),
+        .I3(sw[0]),
+        .O(controls[0]));
+  LUT4 #(
+    .INIT(16'h3808)) 
+    \controls[1]_INST_0 
+       (.I0(btn[1]),
+        .I1(state[0]),
+        .I2(state[1]),
+        .I3(sw[1]),
+        .O(controls[1]));
+  LUT4 #(
+    .INIT(16'h3808)) 
+    \controls[2]_INST_0 
+       (.I0(btn[2]),
+        .I1(state[0]),
+        .I2(state[1]),
+        .I3(sw[2]),
+        .O(controls[2]));
+  LUT4 #(
+    .INIT(16'h3808)) 
+    \controls[3]_INST_0 
+       (.I0(btn[3]),
+        .I1(state[0]),
+        .I2(state[1]),
+        .I3(sw[3]),
+        .O(controls[3]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \game_type_r_reg[0] 
+       (.CLR(1'b0),
+        .D(\game_type_r_reg[0]_i_1_n_0 ),
+        .G(\game_type_r_reg[1]_i_2_n_0 ),
+        .GE(1'b1),
+        .Q(game_type_r[0]));
+  LUT4 #(
+    .INIT(16'h00F2)) 
+    \game_type_r_reg[0]_i_1 
+       (.I0(btn[0]),
+        .I1(btn[1]),
+        .I2(btn[2]),
+        .I3(btn[3]),
+        .O(\game_type_r_reg[0]_i_1_n_0 ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \game_type_r_reg[1] 
+       (.CLR(1'b0),
+        .D(\game_type_r_reg[1]_i_1_n_0 ),
+        .G(\game_type_r_reg[1]_i_2_n_0 ),
+        .GE(1'b1),
+        .Q(game_type_r[1]));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT4 #(
+    .INIT(16'h0054)) 
+    \game_type_r_reg[1]_i_1 
+       (.I0(btn[2]),
+        .I1(btn[1]),
+        .I2(btn[0]),
+        .I3(btn[3]),
+        .O(\game_type_r_reg[1]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'h000000000000FFFE)) 
+    \game_type_r_reg[1]_i_2 
+       (.I0(btn[2]),
+        .I1(btn[0]),
+        .I2(btn[1]),
+        .I3(btn[3]),
+        .I4(state[0]),
+        .I5(state[1]),
+        .O(\game_type_r_reg[1]_i_2_n_0 ));
+  FDRE \game_type_reg[0] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(game_type_r[0]),
+        .Q(game_type[0]),
+        .R(1'b0));
+  FDRE \game_type_reg[1] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(game_type_r[1]),
+        .Q(game_type[1]),
+        .R(1'b0));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \nxt_state_reg[0] 
+       (.CLR(1'b0),
+        .D(nxt_state__0[0]),
+        .G(\nxt_state_reg[1]_i_2_n_0 ),
+        .GE(1'b1),
+        .Q(nxt_state[0]));
+  LUT6 #(
+    .INIT(64'h0A0A0A0AAFAFAFAC)) 
+    \nxt_state_reg[0]_i_1 
+       (.I0(reset_game),
+        .I1(btn[3]),
+        .I2(state[1]),
+        .I3(btn[1]),
+        .I4(btn[2]),
+        .I5(state[0]),
+        .O(nxt_state__0[0]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \nxt_state_reg[1] 
+       (.CLR(1'b0),
+        .D(nxt_state__0[1]),
+        .G(\nxt_state_reg[1]_i_2_n_0 ),
+        .GE(1'b1),
+        .Q(nxt_state[1]));
+  LUT6 #(
+    .INIT(64'h484848484848484D)) 
+    \nxt_state_reg[1]_i_1 
+       (.I0(state[0]),
+        .I1(reset_game),
+        .I2(state[1]),
+        .I3(btn[2]),
+        .I4(btn[1]),
+        .I5(btn[3]),
+        .O(nxt_state__0[1]));
+  LUT4 #(
+    .INIT(16'hFEA4)) 
+    \nxt_state_reg[1]_i_2 
+       (.I0(state[1]),
+        .I1(\nxt_state_reg[1]_i_3_n_0 ),
+        .I2(state[0]),
+        .I3(reset_game),
+        .O(\nxt_state_reg[1]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \nxt_state_reg[1]_i_3 
+       (.I0(btn[3]),
+        .I1(btn[1]),
+        .I2(btn[0]),
+        .I3(btn[2]),
+        .O(\nxt_state_reg[1]_i_3_n_0 ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    ready_reg
+       (.CLR(1'b0),
+        .D(ready_reg_i_1_n_0),
+        .G(ready_reg_i_2_n_0),
+        .GE(1'b1),
+        .Q(ready));
+  LUT5 #(
+    .INIT(32'h000000FE)) 
+    ready_reg_i_1
+       (.I0(btn[2]),
+        .I1(btn[1]),
+        .I2(btn[3]),
+        .I3(state[0]),
+        .I4(state[1]),
+        .O(ready_reg_i_1_n_0));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    ready_reg_i_2
+       (.I0(state[1]),
+        .I1(state[0]),
+        .I2(btn[3]),
+        .I3(btn[1]),
+        .I4(btn[0]),
+        .I5(btn[2]),
+        .O(ready_reg_i_2_n_0));
+  FDRE \state_reg[0] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(nxt_state[0]),
+        .Q(state[0]),
+        .R(1'b0));
+  FDRE \state_reg[1] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(nxt_state[1]),
+        .Q(state[1]),
+        .R(1'b0));
 endmodule
 `ifndef GLBL
 `define GLBL

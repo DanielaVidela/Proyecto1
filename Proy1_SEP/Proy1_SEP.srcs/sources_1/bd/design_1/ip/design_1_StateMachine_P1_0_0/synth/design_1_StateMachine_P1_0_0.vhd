@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:StateMachine_P1:1.0
--- IP Revision: 10
+-- IP Revision: 13
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -84,7 +84,7 @@ ARCHITECTURE design_1_StateMachine_P1_0_0_arch OF design_1_StateMachine_P1_0_0 I
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_StateMachine_P1_0_0_arch : ARCHITECTURE IS "design_1_StateMachine_P1_0_0,StateMachine_P1,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_StateMachine_P1_0_0_arch: ARCHITECTURE IS "design_1_StateMachine_P1_0_0,StateMachine_P1,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=StateMachine_P1,x_ipVersion=1.0,x_ipCoreRevision=10,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_StateMachine_P1_0_0_arch: ARCHITECTURE IS "design_1_StateMachine_P1_0_0,StateMachine_P1,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=StateMachine_P1,x_ipVersion=1.0,x_ipCoreRevision=13,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_StateMachine_P1_0_0_arch: ARCHITECTURE IS "package_project";
   ATTRIBUTE X_INTERFACE_INFO : STRING;

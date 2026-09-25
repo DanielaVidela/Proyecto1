@@ -11,11 +11,11 @@
     },
     "design_tree": {
       "Btn_Debouncer_0": "",
-      "StateMachine_P1_0": "",
       "Mult2_0": "",
       "RNG_0": "",
       "Sequence_Memory_0": "",
-      "simon_says_0": ""
+      "simon_says_0": "",
+      "StateMachine_P1_0": ""
     },
     "ports": {
       "clk": {
@@ -65,10 +65,6 @@
         "vlnv": "xilinx.com:user:Btn_Debouncer:1.0",
         "xci_name": "design_1_Btn_Debouncer_0_0"
       },
-      "StateMachine_P1_0": {
-        "vlnv": "xilinx.com:user:StateMachine_P1:1.0",
-        "xci_name": "design_1_StateMachine_P1_0_0"
-      },
       "Mult2_0": {
         "vlnv": "xilinx.com:user:Mult2:1.0",
         "xci_name": "design_1_Mult2_0_0"
@@ -84,6 +80,10 @@
       "simon_says_0": {
         "vlnv": "xilinx.com:user:simon_says:1.0",
         "xci_name": "design_1_simon_says_0_0"
+      },
+      "StateMachine_P1_0": {
+        "vlnv": "xilinx.com:user:StateMachine_P1:1.0",
+        "xci_name": "design_1_StateMachine_P1_0_0"
       }
     },
     "nets": {
@@ -91,10 +91,10 @@
         "ports": [
           "clk",
           "Btn_Debouncer_0/clk",
-          "StateMachine_P1_0/clk",
           "RNG_0/clk",
           "Sequence_Memory_0/clk",
-          "simon_says_0/clk"
+          "simon_says_0/clk",
+          "StateMachine_P1_0/clk"
         ]
       },
       "RNG_0_rand_led": {

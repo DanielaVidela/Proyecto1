@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Thu Sep 24 18:10:31 2026
+--Date        : Thu Sep 24 21:55:02 2026
 --Host        : DESKTOP-5QP58O6 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -32,17 +32,6 @@ architecture STRUCTURE of design_1 is
     btn_deb : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component design_1_Btn_Debouncer_0_0;
-  component design_1_StateMachine_P1_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    btn : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    sw : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    reset_game : in STD_LOGIC;
-    game_type : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    controls : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    ready : out STD_LOGIC
-  );
-  end component design_1_StateMachine_P1_0_0;
   component design_1_Mult2_0_0 is
   port (
     selector : in STD_LOGIC;
@@ -79,6 +68,17 @@ architecture STRUCTURE of design_1 is
     back_to_menu : out STD_LOGIC
   );
   end component design_1_simon_says_0_0;
+  component design_1_StateMachine_P1_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    btn : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    sw : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    reset_game : in STD_LOGIC;
+    game_type : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    controls : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    ready : out STD_LOGIC
+  );
+  end component design_1_StateMachine_P1_0_0;
   signal Btn_Debouncer_0_btn_deb : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal Mult2_0_output : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal RNG_0_addr : STD_LOGIC_VECTOR ( 4 downto 0 );

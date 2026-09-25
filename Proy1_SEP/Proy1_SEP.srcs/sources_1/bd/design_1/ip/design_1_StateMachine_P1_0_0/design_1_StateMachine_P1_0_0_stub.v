@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Wed Sep 23 12:42:06 2026
-// Host        : sebastian-pc running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top design_1_StateMachine_P1_0_0 -prefix
-//               design_1_StateMachine_P1_0_0_ design_1_StateMachine_P1_0_0_stub.v
+// Date        : Thu Sep 24 21:55:28 2026
+// Host        : DESKTOP-5QP58O6 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub {c:/Users/user/Documents/Proyectos
+//               vivado/P1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_StateMachine_P1_0_0/design_1_StateMachine_P1_0_0_stub.v}
 // Design      : design_1_StateMachine_P1_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1
