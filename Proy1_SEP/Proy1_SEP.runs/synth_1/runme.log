@@ -11,10 +11,8 @@
 
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
-WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.cache/ip 
 Command: synth_design -top design_1_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
@@ -22,78 +20,78 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 25012
+INFO: [Synth 8-7075] Helper process launched with PID 5152
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1077.051 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1070.711 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:23]
-INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:14' bound to instance 'design_1_i' of component 'design_1' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:33]
-INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:27]
-INFO: [Synth 8-3491] module 'design_1_Btn_Debouncer_0_0' declared at 'C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12376-sebastian-pc/realtime/design_1_Btn_Debouncer_0_0_stub.vhdl:5' bound to instance 'Btn_Debouncer_0' of component 'design_1_Btn_Debouncer_0_0' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:105]
-INFO: [Synth 8-638] synthesizing module 'design_1_Btn_Debouncer_0_0' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12376-sebastian-pc/realtime/design_1_Btn_Debouncer_0_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'design_1_Mult2_0_0' declared at 'C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12376-sebastian-pc/realtime/design_1_Mult2_0_0_stub.vhdl:5' bound to instance 'Mult2_0' of component 'design_1_Mult2_0_0' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:111]
-INFO: [Synth 8-638] synthesizing module 'design_1_Mult2_0_0' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12376-sebastian-pc/realtime/design_1_Mult2_0_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'design_1_RNG_0_0' declared at 'C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12376-sebastian-pc/realtime/design_1_RNG_0_0_stub.vhdl:5' bound to instance 'RNG_0' of component 'design_1_RNG_0_0' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:118]
-INFO: [Synth 8-638] synthesizing module 'design_1_RNG_0_0' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12376-sebastian-pc/realtime/design_1_RNG_0_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'design_1_Sequence_Memory_0_1' declared at 'C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12376-sebastian-pc/realtime/design_1_Sequence_Memory_0_1_stub.vhdl:5' bound to instance 'Sequence_Memory_0' of component 'design_1_Sequence_Memory_0_1' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:125]
-INFO: [Synth 8-638] synthesizing module 'design_1_Sequence_Memory_0_1' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12376-sebastian-pc/realtime/design_1_Sequence_Memory_0_1_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'design_1_StateMachine_P1_0_0' declared at 'C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12376-sebastian-pc/realtime/design_1_StateMachine_P1_0_0_stub.vhdl:5' bound to instance 'StateMachine_P1_0' of component 'design_1_StateMachine_P1_0_0' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:133]
-INFO: [Synth 8-638] synthesizing module 'design_1_StateMachine_P1_0_0' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12376-sebastian-pc/realtime/design_1_StateMachine_P1_0_0_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_1_simon_says_0_0' declared at 'C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12376-sebastian-pc/realtime/design_1_simon_says_0_0_stub.vhdl:5' bound to instance 'simon_says_0' of component 'design_1_simon_says_0_0' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:143]
-INFO: [Synth 8-638] synthesizing module 'design_1_simon_says_0_0' [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12376-sebastian-pc/realtime/design_1_simon_says_0_0_stub.vhdl:18]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (1#1) [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:27]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (2#1) [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:23]
+INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:14' bound to instance 'design_1_i' of component 'design_1' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:27]
+INFO: [Synth 8-3491] module 'design_1_Btn_Debouncer_0_0' declared at 'C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12084-sebastian-pc/realtime/design_1_Btn_Debouncer_0_0_stub.vhdl:5' bound to instance 'Btn_Debouncer_0' of component 'design_1_Btn_Debouncer_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'design_1_Btn_Debouncer_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12084-sebastian-pc/realtime/design_1_Btn_Debouncer_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_Mult2_0_0' declared at 'C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12084-sebastian-pc/realtime/design_1_Mult2_0_0_stub.vhdl:5' bound to instance 'Mult2_0' of component 'design_1_Mult2_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'design_1_Mult2_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12084-sebastian-pc/realtime/design_1_Mult2_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_RNG_0_0' declared at 'C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12084-sebastian-pc/realtime/design_1_RNG_0_0_stub.vhdl:5' bound to instance 'RNG_0' of component 'design_1_RNG_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'design_1_RNG_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12084-sebastian-pc/realtime/design_1_RNG_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_Sequence_Memory_0_1' declared at 'C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12084-sebastian-pc/realtime/design_1_Sequence_Memory_0_1_stub.vhdl:5' bound to instance 'Sequence_Memory_0' of component 'design_1_Sequence_Memory_0_1' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'design_1_Sequence_Memory_0_1' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12084-sebastian-pc/realtime/design_1_Sequence_Memory_0_1_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_StateMachine_P1_0_0' declared at 'C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12084-sebastian-pc/realtime/design_1_StateMachine_P1_0_0_stub.vhdl:5' bound to instance 'StateMachine_P1_0' of component 'design_1_StateMachine_P1_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'design_1_StateMachine_P1_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12084-sebastian-pc/realtime/design_1_StateMachine_P1_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_simon_says_0_0' declared at 'C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12084-sebastian-pc/realtime/design_1_simon_says_0_0_stub.vhdl:5' bound to instance 'simon_says_0' of component 'design_1_simon_says_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'design_1_simon_says_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/.Xil/Vivado-12084-sebastian-pc/realtime/design_1_simon_says_0_0_stub.vhdl:19]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (1#1) [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (2#1) [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1077.051 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1070.711 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1077.051 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1070.711 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1077.051 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1070.711 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1077.051 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1070.711 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Sequence_Memory_0_1/design_1_Sequence_Memory_0_1/design_1_Sequence_Memory_0_1_in_context.xdc] for cell 'design_1_i/Sequence_Memory_0'
-Finished Parsing XDC File [c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Sequence_Memory_0_1/design_1_Sequence_Memory_0_1/design_1_Sequence_Memory_0_1_in_context.xdc] for cell 'design_1_i/Sequence_Memory_0'
-Parsing XDC File [c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_RNG_0_0/design_1_RNG_0_0/design_1_RNG_0_0_in_context.xdc] for cell 'design_1_i/RNG_0'
-Finished Parsing XDC File [c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_RNG_0_0/design_1_RNG_0_0/design_1_RNG_0_0_in_context.xdc] for cell 'design_1_i/RNG_0'
-Parsing XDC File [c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_StateMachine_P1_0_0/design_1_StateMachine_P1_0_0/design_1_StateMachine_P1_0_0_in_context.xdc] for cell 'design_1_i/StateMachine_P1_0'
-Finished Parsing XDC File [c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_StateMachine_P1_0_0/design_1_StateMachine_P1_0_0/design_1_StateMachine_P1_0_0_in_context.xdc] for cell 'design_1_i/StateMachine_P1_0'
-Parsing XDC File [c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Btn_Debouncer_0_0/design_1_Btn_Debouncer_0_0/design_1_Btn_Debouncer_0_0_in_context.xdc] for cell 'design_1_i/Btn_Debouncer_0'
-Finished Parsing XDC File [c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Btn_Debouncer_0_0/design_1_Btn_Debouncer_0_0/design_1_Btn_Debouncer_0_0_in_context.xdc] for cell 'design_1_i/Btn_Debouncer_0'
-Parsing XDC File [c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Mult2_0_0/design_1_Mult2_0_0/design_1_Mult2_0_0_in_context.xdc] for cell 'design_1_i/Mult2_0'
-Finished Parsing XDC File [c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Mult2_0_0/design_1_Mult2_0_0/design_1_Mult2_0_0_in_context.xdc] for cell 'design_1_i/Mult2_0'
-Parsing XDC File [c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_simon_says_0_0/design_1_simon_says_0_0/design_1_simon_says_0_0_in_context.xdc] for cell 'design_1_i/simon_says_0'
-Finished Parsing XDC File [c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_simon_says_0_0/design_1_simon_says_0_0/design_1_simon_says_0_0_in_context.xdc] for cell 'design_1_i/simon_says_0'
-Parsing XDC File [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Zybo-Z7-Master.xdc]
-Finished Parsing XDC File [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Zybo-Z7-Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Sequence_Memory_0_1/design_1_Sequence_Memory_0_1/design_1_Sequence_Memory_0_1_in_context.xdc] for cell 'design_1_i/Sequence_Memory_0'
+Finished Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Sequence_Memory_0_1/design_1_Sequence_Memory_0_1/design_1_Sequence_Memory_0_1_in_context.xdc] for cell 'design_1_i/Sequence_Memory_0'
+Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_RNG_0_0/design_1_RNG_0_0/design_1_RNG_0_0_in_context.xdc] for cell 'design_1_i/RNG_0'
+Finished Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_RNG_0_0/design_1_RNG_0_0/design_1_RNG_0_0_in_context.xdc] for cell 'design_1_i/RNG_0'
+Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_StateMachine_P1_0_0/design_1_StateMachine_P1_0_0/design_1_StateMachine_P1_0_0_in_context.xdc] for cell 'design_1_i/StateMachine_P1_0'
+Finished Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_StateMachine_P1_0_0/design_1_StateMachine_P1_0_0/design_1_StateMachine_P1_0_0_in_context.xdc] for cell 'design_1_i/StateMachine_P1_0'
+Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Btn_Debouncer_0_0/design_1_Btn_Debouncer_0_0/design_1_Btn_Debouncer_0_0_in_context.xdc] for cell 'design_1_i/Btn_Debouncer_0'
+Finished Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Btn_Debouncer_0_0/design_1_Btn_Debouncer_0_0/design_1_Btn_Debouncer_0_0_in_context.xdc] for cell 'design_1_i/Btn_Debouncer_0'
+Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Mult2_0_0/design_1_Mult2_0_0/design_1_Mult2_0_0_in_context.xdc] for cell 'design_1_i/Mult2_0'
+Finished Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Mult2_0_0/design_1_Mult2_0_0/design_1_Mult2_0_0_in_context.xdc] for cell 'design_1_i/Mult2_0'
+Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_simon_says_0_0/design_1_simon_says_0_0/design_1_simon_says_0_0_in_context.xdc] for cell 'design_1_i/simon_says_0'
+Finished Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_simon_says_0_0/design_1_simon_says_0_0/design_1_simon_says_0_0_in_context.xdc] for cell 'design_1_i/simon_says_0'
+Parsing XDC File [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Zybo-Z7-Master.xdc]
+Finished Parsing XDC File [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Zybo-Z7-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1130.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1129.539 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1130.832 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1129.539 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1130.832 ; gain = 53.781
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1129.539 ; gain = 58.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1130.832 ; gain = 53.781
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1129.539 ; gain = 58.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -106,10 +104,10 @@ Applied set_property DONT_TOUCH = true for design_1_i/Btn_Debouncer_0. (constrai
 Applied set_property DONT_TOUCH = true for design_1_i/Mult2_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/simon_says_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1130.832 ; gain = 53.781
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1129.539 ; gain = 58.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1130.832 ; gain = 53.781
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1129.539 ; gain = 58.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -131,25 +129,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1130.832 ; gain = 53.781
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1129.539 ; gain = 58.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1147.355 ; gain = 70.305
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1148.391 ; gain = 77.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1147.355 ; gain = 70.305
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1148.391 ; gain = 77.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1166.461 ; gain = 89.410
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1167.500 ; gain = 96.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -167,37 +165,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1173.242 ; gain = 96.191
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1173.297 ; gain = 102.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1173.242 ; gain = 96.191
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1173.297 ; gain = 102.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1173.242 ; gain = 96.191
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1173.297 ; gain = 102.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1173.242 ; gain = 96.191
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1173.297 ; gain = 102.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1173.242 ; gain = 96.191
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1173.297 ; gain = 102.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1173.242 ; gain = 96.191
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1173.297 ; gain = 102.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -229,23 +227,23 @@ Report Cell Usage:
 |8     |OBUF                              |     4|
 +------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1173.242 ; gain = 96.191
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1173.297 ; gain = 102.586
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1173.242 ; gain = 42.410
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1173.242 ; gain = 96.191
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1173.297 ; gain = 43.758
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1173.297 ; gain = 102.586
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1185.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1185.352 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1185.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1188.250 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+33 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1185.297 ; gain = 108.246
-INFO: [Common 17-1381] The checkpoint 'C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/Proy1_SEP/Proy1_SEP.runs/synth_1/design_1_wrapper.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1188.250 ; gain = 117.539
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 24 21:55:08 2026...
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 26 12:26:08 2026...

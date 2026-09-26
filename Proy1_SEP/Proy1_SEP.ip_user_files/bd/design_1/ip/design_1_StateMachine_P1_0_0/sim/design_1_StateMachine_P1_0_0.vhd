@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:StateMachine_P1:1.0
--- IP Revision: 11
+-- IP Revision: 13
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -59,6 +59,7 @@ ENTITY design_1_StateMachine_P1_0_0 IS
     btn : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     sw : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     reset_game : IN STD_LOGIC;
+    enable_simon : OUT STD_LOGIC;
     game_type : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     controls : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
     ready : OUT STD_LOGIC
@@ -74,6 +75,7 @@ ARCHITECTURE design_1_StateMachine_P1_0_0_arch OF design_1_StateMachine_P1_0_0 I
       btn : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       sw : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       reset_game : IN STD_LOGIC;
+      enable_simon : OUT STD_LOGIC;
       game_type : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       controls : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
       ready : OUT STD_LOGIC
@@ -94,6 +96,7 @@ BEGIN
       btn => btn,
       sw => sw,
       reset_game => reset_game,
+      enable_simon => enable_simon,
       game_type => game_type,
       controls => controls,
       ready => ready

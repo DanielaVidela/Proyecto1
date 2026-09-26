@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Thu Sep 24 21:53:51 2026
+--Date        : Sat Sep 26 12:30:40 2026
 --Host        : sebastian-pc running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -65,6 +65,7 @@ architecture STRUCTURE of design_1 is
     leds : out STD_LOGIC_VECTOR ( 3 downto 0 );
     data_in : in STD_LOGIC_VECTOR ( 3 downto 0 );
     mem_addr : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    start_game : in STD_LOGIC;
     back_to_menu : out STD_LOGIC
   );
   end component design_1_simon_says_0_0;
@@ -74,6 +75,7 @@ architecture STRUCTURE of design_1 is
     btn : in STD_LOGIC_VECTOR ( 3 downto 0 );
     sw : in STD_LOGIC_VECTOR ( 3 downto 0 );
     reset_game : in STD_LOGIC;
+    enable_simon : out STD_LOGIC;
     game_type : out STD_LOGIC_VECTOR ( 1 downto 0 );
     controls : out STD_LOGIC_VECTOR ( 3 downto 0 );
     ready : out STD_LOGIC
@@ -85,6 +87,7 @@ architecture STRUCTURE of design_1 is
   signal RNG_0_rand_led : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal Sequence_Memory_0_data_out : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal StateMachine_P1_0_controls : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal StateMachine_P1_0_enable_simon : STD_LOGIC;
   signal StateMachine_P1_0_game_type : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal StateMachine_P1_0_ready : STD_LOGIC;
   signal btn_1 : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -135,6 +138,7 @@ StateMachine_P1_0: component design_1_StateMachine_P1_0_0
       btn(3 downto 0) => Btn_Debouncer_0_btn_deb(3 downto 0),
       clk => clk_0_1,
       controls(3 downto 0) => StateMachine_P1_0_controls(3 downto 0),
+      enable_simon => StateMachine_P1_0_enable_simon,
       game_type(1 downto 0) => StateMachine_P1_0_game_type(1 downto 0),
       ready => StateMachine_P1_0_ready,
       reset_game => simon_says_0_back_to_menu,
@@ -148,6 +152,7 @@ simon_says_0: component design_1_simon_says_0_0
       data_in(3 downto 0) => Sequence_Memory_0_data_out(3 downto 0),
       difficult(1 downto 0) => StateMachine_P1_0_game_type(1 downto 0),
       leds(3 downto 0) => simon_says_0_leds(3 downto 0),
-      mem_addr(4 downto 0) => simon_says_0_mem_addr(4 downto 0)
+      mem_addr(4 downto 0) => simon_says_0_mem_addr(4 downto 0),
+      start_game => StateMachine_P1_0_enable_simon
     );
 end STRUCTURE;

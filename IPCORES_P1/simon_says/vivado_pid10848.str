@@ -1,0 +1,121 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 10848
+License: Customer
+
+Current time: 	Sat Sep 26 12:05:25 CLST 2026
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sbast
+User home directory: C:/Users/sbast
+User working directory: C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/simon_says
+User country: 	CL
+User language: 	es
+User locale: 	es_CL
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/sbast/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/sbast/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/sbast/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/simon_says/vivado.log
+Vivado journal file location: 	C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/simon_says/vivado.jou
+Engine tmp dir: 	C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/simon_says/.Xil/Vivado-10848-sebastian-pc
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_SDK: C:/Xilinx/Vitis/2020.1
+XILINX_VITIS: C:/Xilinx/Vitis/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	201 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,062 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1277 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\sbast\Desktop\PROYECTO01_SEP\Proyecto1\IPCORES_P1\simon_says\simon_says.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/simon_says/simon_says.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,062 MB. GUI used memory: 54 MB. Current time: 9/26/26, 12:05:26 PM CLST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/simon_says/simon_says.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/simon_says' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/simon_says/simon_says.srcs/sources_1/new'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 106 MB (+108752kb) [00:00:22]
+// [Engine Memory]: 1,062 MB (+962570kb) [00:00:22]
+// WARNING: HEventQueue.dispatchEvent() is taking  6549 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 1069.996 ; gain = 0.000 
+// Project name: simon_says; location: C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/simon_says; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz (cs)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 459ms to process. Increasing delay to 3000 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 130 MB (+19440kb) [00:00:56]
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, simon_says(Behavioral) (simon_says.vhd)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, simon_says(Behavioral) (simon_says.vhd)]", 1, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+// Elapsed time: 375 seconds
+selectCodeEditor("simon_says.vhd", 140, 430); // bP (w, cs)
+selectCodeEditor("simon_says.vhd", 140, 430, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("simon_says.vhd", 268, 430); // bP (w, cs)
+selectCodeEditor("simon_says.vhd", 330, 479); // bP (w, cs)
+// [GUI Memory]: 138 MB (+2008kb) [00:13:35]
+// Elapsed time: 931 seconds
+selectCodeEditor("simon_says.vhd", 153, 513); // bP (w, cs)
+selectCodeEditor("simon_says.vhd", 153, 513, false, false, false, false, true); // bP (w, cs) - Double Click

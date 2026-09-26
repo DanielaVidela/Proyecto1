@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Thu Sep 24 21:51:27 2026
+// Date        : Sat Sep 26 12:31:06 2026
 // Host        : sebastian-pc running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top design_1_StateMachine_P1_0_0 -prefix
-//               design_1_StateMachine_P1_0_0_ design_1_StateMachine_P1_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub
+//               c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_StateMachine_P1_0_0/design_1_StateMachine_P1_0_0_stub.v
 // Design      : design_1_StateMachine_P1_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1
@@ -14,12 +14,14 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "StateMachine_P1,Vivado 2020.1" *)
-module design_1_StateMachine_P1_0_0(clk, btn, sw, reset_game, game_type, controls, ready)
-/* synthesis syn_black_box black_box_pad_pin="clk,btn[3:0],sw[3:0],reset_game,game_type[1:0],controls[3:0],ready" */;
+module design_1_StateMachine_P1_0_0(clk, btn, sw, reset_game, enable_simon, game_type, 
+  controls, ready)
+/* synthesis syn_black_box black_box_pad_pin="clk,btn[3:0],sw[3:0],reset_game,enable_simon,game_type[1:0],controls[3:0],ready" */;
   input clk;
   input [3:0]btn;
   input [3:0]sw;
   input reset_game;
+  output enable_simon;
   output [1:0]game_type;
   output [3:0]controls;
   output ready;

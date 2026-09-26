@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Sep 24 21:53:52 2026" VIVADOVERSION="2020.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Sep 26 12:30:40 2026" VIVADOVERSION="2020.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.2" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -155,7 +155,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="11" FULLNAME="/StateMachine_P1_0" HWVERSION="1.0" INSTANCE="StateMachine_P1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StateMachine_P1" VLNV="xilinx.com:user:StateMachine_P1:1.0">
+    <MODULE COREREVISION="13" FULLNAME="/StateMachine_P1_0" HWVERSION="1.0" INSTANCE="StateMachine_P1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StateMachine_P1" VLNV="xilinx.com:user:StateMachine_P1:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="design_1_StateMachine_P1_0_0"/>
@@ -182,6 +182,11 @@
             <CONNECTION INSTANCE="simon_says_0" PORT="back_to_menu"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" NAME="enable_simon" SIGIS="undef" SIGNAME="StateMachine_P1_0_enable_simon">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="simon_says_0" PORT="start_game"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="1" NAME="game_type" RIGHT="0" SIGIS="undef" SIGNAME="StateMachine_P1_0_game_type">
           <CONNECTIONS>
             <CONNECTION INSTANCE="simon_says_0" PORT="difficult"/>
@@ -202,7 +207,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="3" FULLNAME="/simon_says_0" HWVERSION="1.0" INSTANCE="simon_says_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="simon_says" VLNV="xilinx.com:user:simon_says:1.0">
+    <MODULE COREREVISION="5" FULLNAME="/simon_says_0" HWVERSION="1.0" INSTANCE="simon_says_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="simon_says" VLNV="xilinx.com:user:simon_says:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="RAM_LENGTH" VALUE="32"/>
@@ -238,6 +243,11 @@
         <PORT DIR="O" LEFT="4" NAME="mem_addr" RIGHT="0" SIGIS="undef" SIGNAME="simon_says_0_mem_addr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Mult2_0" PORT="in1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="start_game" SIGIS="undef" SIGNAME="StateMachine_P1_0_enable_simon">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StateMachine_P1_0" PORT="enable_simon"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="back_to_menu" SIGIS="undef" SIGNAME="simon_says_0_back_to_menu">

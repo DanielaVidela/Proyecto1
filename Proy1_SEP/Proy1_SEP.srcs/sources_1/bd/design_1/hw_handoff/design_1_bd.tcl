@@ -188,6 +188,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net RNG_0_rand_led [get_bd_pins RNG_0/rand_led] [get_bd_pins Sequence_Memory_0/data_in]
   connect_bd_net -net Sequence_Memory_0_data_out [get_bd_pins Sequence_Memory_0/data_out] [get_bd_pins simon_says_0/data_in]
   connect_bd_net -net StateMachine_P1_0_controls [get_bd_pins StateMachine_P1_0/controls] [get_bd_pins simon_says_0/btn]
+  connect_bd_net -net StateMachine_P1_0_enable_simon [get_bd_pins StateMachine_P1_0/enable_simon] [get_bd_pins simon_says_0/start_game]
   connect_bd_net -net StateMachine_P1_0_game_type [get_bd_pins StateMachine_P1_0/game_type] [get_bd_pins simon_says_0/difficult]
   connect_bd_net -net StateMachine_P1_0_ready [get_bd_pins Mult2_0/selector] [get_bd_pins RNG_0/ready] [get_bd_pins Sequence_Memory_0/io] [get_bd_pins StateMachine_P1_0/ready]
   connect_bd_net -net btn_1 [get_bd_ports btn] [get_bd_pins Btn_Debouncer_0/button]

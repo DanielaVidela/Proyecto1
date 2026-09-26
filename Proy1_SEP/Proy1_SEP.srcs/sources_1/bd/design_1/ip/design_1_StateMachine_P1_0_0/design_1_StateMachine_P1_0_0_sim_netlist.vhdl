@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Thu Sep 24 21:51:27 2026
+-- Date        : Sat Sep 26 12:31:06 2026
 -- Host        : sebastian-pc running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top design_1_StateMachine_P1_0_0 -prefix
---               design_1_StateMachine_P1_0_0_ design_1_StateMachine_P1_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_StateMachine_P1_0_0/design_1_StateMachine_P1_0_0_sim_netlist.vhdl
 -- Design      : design_1_StateMachine_P1_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -16,38 +16,109 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1_StateMachine_P1_0_0_StateMachine_P1 is
   port (
-    ready : out STD_LOGIC;
     game_type : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    ready : out STD_LOGIC;
     controls : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    enable_simon : out STD_LOGIC;
+    reset_game : in STD_LOGIC;
     clk : in STD_LOGIC;
     btn : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    reset_game : in STD_LOGIC;
     sw : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_StateMachine_P1_0_0_StateMachine_P1 : entity is "StateMachine_P1";
 end design_1_StateMachine_P1_0_0_StateMachine_P1;
 
 architecture STRUCTURE of design_1_StateMachine_P1_0_0_StateMachine_P1 is
-  signal game_type_r : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal \game_type_r_reg[0]_i_1_n_0\ : STD_LOGIC;
-  signal \game_type_r_reg[1]_i_1_n_0\ : STD_LOGIC;
-  signal \game_type_r_reg[1]_i_2_n_0\ : STD_LOGIC;
-  signal nxt_state : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal \nxt_state__0\ : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal \nxt_state_reg[1]_i_2_n_0\ : STD_LOGIC;
-  signal \nxt_state_reg[1]_i_3_n_0\ : STD_LOGIC;
-  signal ready_reg_i_1_n_0 : STD_LOGIC;
-  signal ready_reg_i_2_n_0 : STD_LOGIC;
+  signal \FSM_sequential_state[0]_i_1_n_0\ : STD_LOGIC;
+  signal \FSM_sequential_state[1]_i_1_n_0\ : STD_LOGIC;
+  signal \FSM_sequential_state[1]_i_2_n_0\ : STD_LOGIC;
+  signal \FSM_sequential_state[1]_i_3_n_0\ : STD_LOGIC;
+  signal enable_simon_r_i_1_n_0 : STD_LOGIC;
+  signal \^game_type\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \game_type_r[0]_i_1_n_0\ : STD_LOGIC;
+  signal \game_type_r[1]_i_1_n_0\ : STD_LOGIC;
+  signal \game_type_r[1]_i_2_n_0\ : STD_LOGIC;
   signal state : STD_LOGIC_VECTOR ( 1 downto 0 );
-  attribute XILINX_LEGACY_PRIM : string;
-  attribute XILINX_LEGACY_PRIM of \game_type_r_reg[0]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \game_type_r_reg[1]\ : label is "LD";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \game_type_r_reg[1]_i_1\ : label is "soft_lutpair0";
-  attribute XILINX_LEGACY_PRIM of \nxt_state_reg[0]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \nxt_state_reg[1]\ : label is "LD";
-  attribute SOFT_HLUTNM of \nxt_state_reg[1]_i_3\ : label is "soft_lutpair0";
-  attribute XILINX_LEGACY_PRIM of ready_reg : label is "LD";
+  attribute SOFT_HLUTNM of \FSM_sequential_state[0]_i_1\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \FSM_sequential_state[1]_i_1\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \FSM_sequential_state[1]_i_2\ : label is "soft_lutpair1";
+  attribute FSM_ENCODED_STATES : string;
+  attribute FSM_ENCODED_STATES of \FSM_sequential_state_reg[0]\ : label is "puzzle:10,simon:01,menu:00,game_over:11";
+  attribute FSM_ENCODED_STATES of \FSM_sequential_state_reg[1]\ : label is "puzzle:10,simon:01,menu:00,game_over:11";
+  attribute SOFT_HLUTNM of \controls[0]_INST_0\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of enable_simon_r_i_1 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of ready_INST_0 : label is "soft_lutpair1";
 begin
+  game_type(1 downto 0) <= \^game_type\(1 downto 0);
+\FSM_sequential_state[0]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"33EC3320"
+    )
+        port map (
+      I0 => \FSM_sequential_state[1]_i_2_n_0\,
+      I1 => state(1),
+      I2 => \FSM_sequential_state[1]_i_3_n_0\,
+      I3 => state(0),
+      I4 => reset_game,
+      O => \FSM_sequential_state[0]_i_1_n_0\
+    );
+\FSM_sequential_state[1]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"33DC00DC"
+    )
+        port map (
+      I0 => \FSM_sequential_state[1]_i_2_n_0\,
+      I1 => state(1),
+      I2 => \FSM_sequential_state[1]_i_3_n_0\,
+      I3 => state(0),
+      I4 => reset_game,
+      O => \FSM_sequential_state[1]_i_1_n_0\
+    );
+\FSM_sequential_state[1]_i_2\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"FE"
+    )
+        port map (
+      I0 => btn(3),
+      I1 => btn(1),
+      I2 => btn(2),
+      O => \FSM_sequential_state[1]_i_2_n_0\
+    );
+\FSM_sequential_state[1]_i_3\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => btn(3),
+      I1 => btn(1),
+      I2 => btn(0),
+      I3 => btn(2),
+      O => \FSM_sequential_state[1]_i_3_n_0\
+    );
+\FSM_sequential_state_reg[0]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \FSM_sequential_state[0]_i_1_n_0\,
+      Q => state(0),
+      R => '0'
+    );
+\FSM_sequential_state_reg[1]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clk,
+      CE => '1',
+      D => \FSM_sequential_state[1]_i_1_n_0\,
+      Q => state(1),
+      R => '0'
+    );
 \controls[0]_INST_0\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"3808"
@@ -92,51 +163,53 @@ begin
       I3 => sw(3),
       O => controls(3)
     );
-\game_type_r_reg[0]\: unisim.vcomponents.LDCE
+enable_simon_r_i_1: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => state(0),
+      I1 => state(1),
+      O => enable_simon_r_i_1_n_0
+    );
+enable_simon_r_reg: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
         port map (
-      CLR => '0',
-      D => \game_type_r_reg[0]_i_1_n_0\,
-      G => \game_type_r_reg[1]_i_2_n_0\,
-      GE => '1',
-      Q => game_type_r(0)
+      C => clk,
+      CE => '1',
+      D => enable_simon_r_i_1_n_0,
+      Q => enable_simon,
+      R => '0'
     );
-\game_type_r_reg[0]_i_1\: unisim.vcomponents.LUT4
+\game_type_r[0]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00F2"
+      INIT => X"00F2FFFF00F20000"
     )
         port map (
       I0 => btn(0),
       I1 => btn(1),
       I2 => btn(2),
       I3 => btn(3),
-      O => \game_type_r_reg[0]_i_1_n_0\
+      I4 => \game_type_r[1]_i_2_n_0\,
+      I5 => \^game_type\(0),
+      O => \game_type_r[0]_i_1_n_0\
     );
-\game_type_r_reg[1]\: unisim.vcomponents.LDCE
+\game_type_r[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \game_type_r_reg[1]_i_1_n_0\,
-      G => \game_type_r_reg[1]_i_2_n_0\,
-      GE => '1',
-      Q => game_type_r(1)
-    );
-\game_type_r_reg[1]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0054"
+      INIT => X"0054FFFF00540000"
     )
         port map (
       I0 => btn(2),
       I1 => btn(1),
       I2 => btn(0),
       I3 => btn(3),
-      O => \game_type_r_reg[1]_i_1_n_0\
+      I4 => \game_type_r[1]_i_2_n_0\,
+      I5 => \^game_type\(1),
+      O => \game_type_r[1]_i_1_n_0\
     );
-\game_type_r_reg[1]_i_2\: unisim.vcomponents.LUT6
+\game_type_r[1]_i_2\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"000000000000FFFE"
     )
@@ -147,106 +220,31 @@ begin
       I3 => btn(3),
       I4 => state(0),
       I5 => state(1),
-      O => \game_type_r_reg[1]_i_2_n_0\
+      O => \game_type_r[1]_i_2_n_0\
     );
-\game_type_reg[0]\: unisim.vcomponents.FDRE
-     port map (
+\game_type_r_reg[0]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => clk,
       CE => '1',
-      D => game_type_r(0),
-      Q => game_type(0),
+      D => \game_type_r[0]_i_1_n_0\,
+      Q => \^game_type\(0),
       R => '0'
     );
-\game_type_reg[1]\: unisim.vcomponents.FDRE
-     port map (
+\game_type_r_reg[1]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => clk,
       CE => '1',
-      D => game_type_r(1),
-      Q => game_type(1),
+      D => \game_type_r[1]_i_1_n_0\,
+      Q => \^game_type\(1),
       R => '0'
     );
-\nxt_state_reg[0]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \nxt_state__0\(0),
-      G => \nxt_state_reg[1]_i_2_n_0\,
-      GE => '1',
-      Q => nxt_state(0)
-    );
-\nxt_state_reg[0]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0A0A0A0AAFAFAFAC"
-    )
-        port map (
-      I0 => reset_game,
-      I1 => btn(3),
-      I2 => state(1),
-      I3 => btn(1),
-      I4 => btn(2),
-      I5 => state(0),
-      O => \nxt_state__0\(0)
-    );
-\nxt_state_reg[1]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \nxt_state__0\(1),
-      G => \nxt_state_reg[1]_i_2_n_0\,
-      GE => '1',
-      Q => nxt_state(1)
-    );
-\nxt_state_reg[1]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"484848484848484D"
-    )
-        port map (
-      I0 => state(0),
-      I1 => reset_game,
-      I2 => state(1),
-      I3 => btn(2),
-      I4 => btn(1),
-      I5 => btn(3),
-      O => \nxt_state__0\(1)
-    );
-\nxt_state_reg[1]_i_2\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FEA4"
-    )
-        port map (
-      I0 => state(1),
-      I1 => \nxt_state_reg[1]_i_3_n_0\,
-      I2 => state(0),
-      I3 => reset_game,
-      O => \nxt_state_reg[1]_i_2_n_0\
-    );
-\nxt_state_reg[1]_i_3\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => btn(3),
-      I1 => btn(1),
-      I2 => btn(0),
-      I3 => btn(2),
-      O => \nxt_state_reg[1]_i_3_n_0\
-    );
-ready_reg: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => ready_reg_i_1_n_0,
-      G => ready_reg_i_2_n_0,
-      GE => '1',
-      Q => ready
-    );
-ready_reg_i_1: unisim.vcomponents.LUT5
+ready_INST_0: unisim.vcomponents.LUT5
     generic map(
       INIT => X"000000FE"
     )
@@ -256,36 +254,7 @@ ready_reg_i_1: unisim.vcomponents.LUT5
       I2 => btn(3),
       I3 => state(0),
       I4 => state(1),
-      O => ready_reg_i_1_n_0
-    );
-ready_reg_i_2: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFFFFFFE"
-    )
-        port map (
-      I0 => state(1),
-      I1 => state(0),
-      I2 => btn(3),
-      I3 => btn(1),
-      I4 => btn(0),
-      I5 => btn(2),
-      O => ready_reg_i_2_n_0
-    );
-\state_reg[0]\: unisim.vcomponents.FDRE
-     port map (
-      C => clk,
-      CE => '1',
-      D => nxt_state(0),
-      Q => state(0),
-      R => '0'
-    );
-\state_reg[1]\: unisim.vcomponents.FDRE
-     port map (
-      C => clk,
-      CE => '1',
-      D => nxt_state(1),
-      Q => state(1),
-      R => '0'
+      O => ready
     );
 end STRUCTURE;
 library IEEE;
@@ -298,6 +267,7 @@ entity design_1_StateMachine_P1_0_0 is
     btn : in STD_LOGIC_VECTOR ( 3 downto 0 );
     sw : in STD_LOGIC_VECTOR ( 3 downto 0 );
     reset_game : in STD_LOGIC;
+    enable_simon : out STD_LOGIC;
     game_type : out STD_LOGIC_VECTOR ( 1 downto 0 );
     controls : out STD_LOGIC_VECTOR ( 3 downto 0 );
     ready : out STD_LOGIC
@@ -327,6 +297,7 @@ U0: entity work.design_1_StateMachine_P1_0_0_StateMachine_P1
       btn(3 downto 0) => btn(3 downto 0),
       clk => clk,
       controls(3 downto 0) => controls(3 downto 0),
+      enable_simon => enable_simon,
       game_type(1 downto 0) => game_type(1 downto 0),
       ready => ready,
       reset_game => reset_game,

@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Thu Sep 24 21:51:27 2026
+-- Date        : Sat Sep 26 12:31:06 2026
 -- Host        : sebastian-pc running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_StateMachine_P1_0_0 -prefix
---               design_1_StateMachine_P1_0_0_ design_1_StateMachine_P1_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_StateMachine_P1_0_0/design_1_StateMachine_P1_0_0_stub.vhdl
 -- Design      : design_1_StateMachine_P1_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1
@@ -18,6 +18,7 @@ entity design_1_StateMachine_P1_0_0 is
     btn : in STD_LOGIC_VECTOR ( 3 downto 0 );
     sw : in STD_LOGIC_VECTOR ( 3 downto 0 );
     reset_game : in STD_LOGIC;
+    enable_simon : out STD_LOGIC;
     game_type : out STD_LOGIC_VECTOR ( 1 downto 0 );
     controls : out STD_LOGIC_VECTOR ( 3 downto 0 );
     ready : out STD_LOGIC
@@ -29,7 +30,7 @@ architecture stub of design_1_StateMachine_P1_0_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "clk,btn[3:0],sw[3:0],reset_game,game_type[1:0],controls[3:0],ready";
+attribute black_box_pad_pin of stub : architecture is "clk,btn[3:0],sw[3:0],reset_game,enable_simon,game_type[1:0],controls[3:0],ready";
 attribute x_core_info : string;
 attribute x_core_info of stub : architecture is "StateMachine_P1,Vivado 2020.1";
 begin

@@ -176,6 +176,12 @@
           "simon_says_0/back_to_menu",
           "StateMachine_P1_0/reset_game"
         ]
+      },
+      "StateMachine_P1_0_enable_simon": {
+        "ports": [
+          "StateMachine_P1_0/enable_simon",
+          "simon_says_0/start_game"
+        ]
       }
     }
   }

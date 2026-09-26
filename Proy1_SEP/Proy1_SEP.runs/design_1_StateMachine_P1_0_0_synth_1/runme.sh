@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/user/Documents/Proyectos vivado/P1/Proy1_SEP/Proy1_SEP.runs/design_1_StateMachine_P1_0_0_synth_1'
+HD_PWD='C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/Proy1_SEP/Proy1_SEP.runs/design_1_StateMachine_P1_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

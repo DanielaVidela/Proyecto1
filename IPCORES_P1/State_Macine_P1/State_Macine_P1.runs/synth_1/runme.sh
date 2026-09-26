@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.runs/synth_1'
+HD_PWD='C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
