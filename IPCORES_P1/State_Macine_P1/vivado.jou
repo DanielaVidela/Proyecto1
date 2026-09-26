@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Sep 26 09:55:58 2026
+# Process ID: 14204
+# Current directory: C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30064 C:\Users\sbast\Desktop\Proyecto1-main_4.0\Proyecto1-main\IPCORES_P1\State_Macine_P1\State_Macine_P1.xpr
+# Log file: C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/vivado.log
+# Journal file: C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.xpr
+update_compile_order -fileset sources_1

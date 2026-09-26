@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
 -- Date        : Wed Sep 23 13:10:54 2026
 -- Host        : sebastian-pc running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/sbast/Desktop/P1_2.0/P1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Sequence_Memory_0_1/design_1_Sequence_Memory_0_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_Sequence_Memory_0_1 -prefix
+--               design_1_Sequence_Memory_0_1_ design_1_Sequence_Memory_0_1_sim_netlist.vhdl
 -- Design      : design_1_Sequence_Memory_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22,8 +22,6 @@ entity design_1_Sequence_Memory_0_1_Sequence_Memory is
     io : in STD_LOGIC;
     addr : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_Sequence_Memory_0_1_Sequence_Memory : entity is "Sequence_Memory";
 end design_1_Sequence_Memory_0_1_Sequence_Memory;
 
 architecture STRUCTURE of design_1_Sequence_Memory_0_1_Sequence_Memory is

@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Thu Sep 24 18:11:28 2026
+// Date        : Thu Sep 24 18:11:27 2026
 // Host        : DESKTOP-5QP58O6 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim {c:/Users/user/Documents/Proyectos
-//               vivado/P1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_simon_says_0_0/design_1_simon_says_0_0_sim_netlist.v}
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_simon_says_0_0 -prefix
+//               design_1_simon_says_0_0_ design_1_simon_says_0_0_sim_netlist.v
 // Design      : design_1_simon_says_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,44 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_simon_says_0_0,simon_says,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
-(* x_core_info = "simon_says,Vivado 2020.1" *) 
-(* NotValidForBitStream *)
-module design_1_simon_says_0_0
-   (clk,
-    difficult,
-    btn,
-    leds,
-    data_in,
-    mem_addr,
-    back_to_menu);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_clk, INSERT_VIP 0" *) input clk;
-  input [1:0]difficult;
-  input [3:0]btn;
-  output [3:0]leds;
-  input [3:0]data_in;
-  output [4:0]mem_addr;
-  output back_to_menu;
-
-  wire back_to_menu;
-  wire [3:0]btn;
-  wire clk;
-  wire [3:0]data_in;
-  wire [1:0]difficult;
-  wire [3:0]leds;
-  wire [4:0]mem_addr;
-
-  design_1_simon_says_0_0_simon_says U0
-       (.back_to_menu(back_to_menu),
-        .btn(btn),
-        .clk(clk),
-        .data_in(data_in),
-        .difficult(difficult),
-        .leds(leds),
-        .mem_addr(mem_addr));
-endmodule
-
-(* ORIG_REF_NAME = "clk_divider" *) 
 module design_1_simon_says_0_0_clk_divider
    (CLK,
     clk,
@@ -677,7 +639,43 @@ module design_1_simon_says_0_0_clk_divider
         .R(clear));
 endmodule
 
-(* ORIG_REF_NAME = "simon_says" *) 
+(* CHECK_LICENSE_TYPE = "design_1_simon_says_0_0,simon_says,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
+(* x_core_info = "simon_says,Vivado 2020.1" *) 
+(* NotValidForBitStream *)
+module design_1_simon_says_0_0
+   (clk,
+    difficult,
+    btn,
+    leds,
+    data_in,
+    mem_addr,
+    back_to_menu);
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_clk, INSERT_VIP 0" *) input clk;
+  input [1:0]difficult;
+  input [3:0]btn;
+  output [3:0]leds;
+  input [3:0]data_in;
+  output [4:0]mem_addr;
+  output back_to_menu;
+
+  wire back_to_menu;
+  wire [3:0]btn;
+  wire clk;
+  wire [3:0]data_in;
+  wire [1:0]difficult;
+  wire [3:0]leds;
+  wire [4:0]mem_addr;
+
+  design_1_simon_says_0_0_simon_says U0
+       (.back_to_menu(back_to_menu),
+        .btn(btn),
+        .clk(clk),
+        .data_in(data_in),
+        .difficult(difficult),
+        .leds(leds),
+        .mem_addr(mem_addr));
+endmodule
+
 module design_1_simon_says_0_0_simon_says
    (leds,
     mem_addr,

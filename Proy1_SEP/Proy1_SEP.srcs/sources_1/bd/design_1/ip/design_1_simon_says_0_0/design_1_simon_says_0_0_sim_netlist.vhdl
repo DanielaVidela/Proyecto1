@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
 -- Date        : Thu Sep 24 18:11:28 2026
 -- Host        : DESKTOP-5QP58O6 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim {c:/Users/user/Documents/Proyectos
---               vivado/P1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_simon_says_0_0/design_1_simon_says_0_0_sim_netlist.vhdl}
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_simon_says_0_0 -prefix
+--               design_1_simon_says_0_0_ design_1_simon_says_0_0_sim_netlist.vhdl
 -- Design      : design_1_simon_says_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,8 +20,6 @@ entity design_1_simon_says_0_0_clk_divider is
     \^clk\ : in STD_LOGIC;
     difficult : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_simon_says_0_0_clk_divider : entity is "clk_divider";
 end design_1_simon_says_0_0_clk_divider;
 
 architecture STRUCTURE of design_1_simon_says_0_0_clk_divider is
@@ -914,8 +912,6 @@ entity design_1_simon_says_0_0_simon_says is
     btn : in STD_LOGIC_VECTOR ( 3 downto 0 );
     data_in : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_simon_says_0_0_simon_says : entity is "simon_says";
 end design_1_simon_says_0_0_simon_says;
 
 architecture STRUCTURE of design_1_simon_says_0_0_simon_says is

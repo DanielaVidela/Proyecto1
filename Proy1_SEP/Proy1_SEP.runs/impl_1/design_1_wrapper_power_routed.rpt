@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Thu Sep 24 18:12:33 2026
-| Host             : DESKTOP-5QP58O6 running 64-bit major release  (build 9200)
+| Date             : Thu Sep 24 21:55:56 2026
+| Host             : sebastian-pc running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
 | Device           : xc7z010clg400-1
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.001 |        3 |       --- |             --- |
-| Slice Logic              |    <0.001 |      367 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |      146 |     17600 |            0.83 |
+| Slice Logic              |    <0.001 |      377 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |      152 |     17600 |            0.86 |
 |   CARRY4                 |    <0.001 |       31 |      4400 |            0.70 |
-|   Register               |    <0.001 |      136 |     35200 |            0.39 |
-|   Others                 |     0.000 |       15 |       --- |             --- |
+|   Register               |    <0.001 |      140 |     35200 |            0.40 |
+|   Others                 |     0.000 |       14 |       --- |             --- |
 |   LUT as Distributed RAM |     0.000 |        2 |      6000 |            0.03 |
-| Signals                  |    <0.001 |      238 |       --- |             --- |
+| Signals                  |    <0.001 |      249 |       --- |             --- |
 | I/O                      |    <0.001 |       13 |       100 |           13.00 |
 | Static Power             |     0.093 |          |           |                 |
 | Total                    |     0.095 |          |           |                 |

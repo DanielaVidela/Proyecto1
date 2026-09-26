@@ -21,7 +21,7 @@ entity simon_says is
         mem_addr : out std_logic_vector (4 downto 0);
         
         --Comunicación con State Machine
---        start_game : in std_logic;
+        start_game : in std_logic;
         back_to_menu : out std_logic
         );
 end simon_says;
@@ -29,14 +29,14 @@ end simon_says;
 architecture Behavioral of simon_says is
     
     --FSM states
-    type state_type is (SHOW, WAIT_USER, GAME_OVER, WIN);
+    type state_type is (IDLE, SHOW, WAIT_USER, GAME_OVER, WIN);
     signal state, nxt_state : state_type;
     
     --Level controller (depending on the RAM length)
-    signal level_r, level : integer range 0 to 33 := 0; --Level 0 to 33
-    signal index_r, index : integer range 0 to RAM_LENGTH - 1 := 0; --What ram address to take
+    signal level_r, level : integer range 0 to RAM_LENGTH := 0; --Level 0 to 32
+    signal index_r, index : integer range 0 to RAM_LENGTH := 0; --What ram address to take
     
-    --Output for the main game FSM to go back to the menu or if you win
+    --Output for the main game FSM to enter SIMON or go back to the menu or if you win
     signal back_to_menu_r : std_logic := '0';
     signal count_to_menu : integer := 0;
     signal winner : std_logic := '0';
@@ -81,12 +81,18 @@ begin
         );
         
     --Sequential logic for game
-    process(clk_div)
+    process(clk_div, start_game)
     begin
         if rising_edge(clk_div) then
-            state <= nxt_state;
-            level_r <= level;
-            index_r <= index;
+            if start_game = '1' then
+                state <= nxt_state;
+                level_r <= level;
+                index_r <= index;
+            else
+                state <= IDLE;
+                level_r <= level;
+                index_r <= index;
+            end if;
         end if;
     end process;
     
@@ -94,7 +100,7 @@ begin
     process(clk) begin
             if rising_edge(clk) then
                 if state = GAME_OVER then
-                    if count_to_menu < 125_000_000_0 then
+                    if count_to_menu < 125_000_000_0 then --10s before going back to menu
                         count_to_menu <= count_to_menu + 1;
                     elsif count_to_menu = 125_000_000_0 then
                         count_to_menu <= 0;
@@ -123,6 +129,10 @@ begin
         user_press := btn;
         
         case state is
+            when IDLE =>
+                leds <= "0000";
+                nxt_state <= SHOW;
+
             when SHOW =>
                 leds <= data_in;
                 nxt_state <= WAIT_USER;

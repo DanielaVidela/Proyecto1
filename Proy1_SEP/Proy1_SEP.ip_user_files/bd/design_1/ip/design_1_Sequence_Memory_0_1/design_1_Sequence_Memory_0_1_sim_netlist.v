@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
 // Date        : Wed Sep 23 13:10:54 2026
 // Host        : sebastian-pc running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/sbast/Desktop/P1_2.0/P1/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ip/design_1_Sequence_Memory_0_1/design_1_Sequence_Memory_0_1_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_Sequence_Memory_0_1 -prefix
+//               design_1_Sequence_Memory_0_1_ design_1_Sequence_Memory_0_1_sim_netlist.v
 // Design      : design_1_Sequence_Memory_0_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,36 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_Sequence_Memory_0_1,Sequence_Memory,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
-(* x_core_info = "Sequence_Memory,Vivado 2020.1" *) 
-(* NotValidForBitStream *)
-module design_1_Sequence_Memory_0_1
-   (clk,
-    io,
-    data_in,
-    addr,
-    data_out);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0" *) input clk;
-  input io;
-  input [1:0]data_in;
-  input [4:0]addr;
-  output [3:0]data_out;
-
-  wire [4:0]addr;
-  wire clk;
-  wire [1:0]data_in;
-  wire [3:0]data_out;
-  wire io;
-
-  design_1_Sequence_Memory_0_1_Sequence_Memory U0
-       (.addr(addr),
-        .clk(clk),
-        .data_in(data_in),
-        .data_out(data_out),
-        .io(io));
-endmodule
-
-(* ORIG_REF_NAME = "Sequence_Memory" *) 
 module design_1_Sequence_Memory_0_1_Sequence_Memory
    (data_out,
     clk,
@@ -159,6 +129,35 @@ module design_1_Sequence_Memory_0_1_Sequence_Memory
         .O(p_0_out[1]),
         .WCLK(clk),
         .WE(io));
+endmodule
+
+(* CHECK_LICENSE_TYPE = "design_1_Sequence_Memory_0_1,Sequence_Memory,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
+(* x_core_info = "Sequence_Memory,Vivado 2020.1" *) 
+(* NotValidForBitStream *)
+module design_1_Sequence_Memory_0_1
+   (clk,
+    io,
+    data_in,
+    addr,
+    data_out);
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0" *) input clk;
+  input io;
+  input [1:0]data_in;
+  input [4:0]addr;
+  output [3:0]data_out;
+
+  wire [4:0]addr;
+  wire clk;
+  wire [1:0]data_in;
+  wire [3:0]data_out;
+  wire io;
+
+  design_1_Sequence_Memory_0_1_Sequence_Memory U0
+       (.addr(addr),
+        .clk(clk),
+        .data_in(data_in),
+        .data_out(data_out),
+        .io(io));
 endmodule
 `ifndef GLBL
 `define GLBL

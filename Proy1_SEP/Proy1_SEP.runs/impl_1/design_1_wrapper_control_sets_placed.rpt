@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Thu Sep 24 18:12:23 2026
-| Host         : DESKTOP-5QP58O6 running 64-bit major release  (build 9200)
+| Date         : Thu Sep 24 21:55:45 2026
+| Host         : sebastian-pc running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
 | Design       : design_1_wrapper
 | Device       : xc7z010
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    14 |
-|    Minimum number of control sets                        |    14 |
+| Total control sets                                       |    15 |
+|    Minimum number of control sets                        |    15 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    48 |
+| Unused register locations in slices containing registers |    52 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,10 +39,10 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    14 |
-| >= 0 to < 4        |     4 |
-| >= 4 to < 6        |     5 |
-| >= 6 to < 8        |     1 |
+| Total control sets |    15 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     2 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     1 |
@@ -58,7 +58,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              37 |           15 |
+| No           | No                    | No                     |              41 |           23 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              27 |            7 |
 | Yes          | No                    | No                     |              40 |           10 |
@@ -73,20 +73,21 @@ Table of Contents
 +---------------------------------------------------------------------+-----------------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
 |                             Clock Signal                            |                    Enable Signal                    |                Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
 +---------------------------------------------------------------------+-----------------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
-|  design_1_i/StateMachine_P1_0/U0/ready_inferred__0/i__n_0           |                                                     |                                               |                1 |              1 |         1.00 |
-|  design_1_i/simon_says_0/U0/FSM_sequential_nxt_state_reg[1]_i_2_n_0 |                                                     |                                               |                1 |              2 |         2.00 |
+|  design_1_i/StateMachine_P1_0/U0/ready_reg_i_2_n_0                  |                                                     |                                               |                1 |              1 |         1.00 |
+|  design_1_i/StateMachine_P1_0/U0/game_type_r_reg[1]_i_2_n_0         |                                                     |                                               |                2 |              2 |         1.00 |
+|  design_1_i/StateMachine_P1_0/U0/nxt_state_reg[1]_i_2_n_0           |                                                     |                                               |                1 |              2 |         2.00 |
 |  clk_IBUF_BUFG                                                      | design_1_i/StateMachine_P1_0/U0/ready               |                                               |                1 |              2 |         2.00 |
-|  design_1_i/StateMachine_P1_0/U0/nxt_state_n_0                      |                                                     |                                               |                1 |              2 |         2.00 |
-|  design_1_i/simon_says_0/U0/leds_reg[3]_i_2_n_0                     |                                                     |                                               |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG                                                      |                                                     |                                               |                3 |              4 |         1.33 |
-|  clk_IBUF_BUFG                                                      | design_1_i/Sequence_Memory_0/U0/data_out[3]_i_1_n_0 |                                               |                1 |              4 |         4.00 |
+|  design_1_i/simon_says_0/U0/FSM_sequential_nxt_state_reg[1]_i_2_n_0 |                                                     |                                               |                1 |              2 |         2.00 |
 |  clk_IBUF_BUFG                                                      | design_1_i/Btn_Debouncer_0/U0/btn_deb0              |                                               |                1 |              4 |         4.00 |
-|  design_1_i/simon_says_0/U0/index__0                                |                                                     |                                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                                                      | design_1_i/Sequence_Memory_0/U0/data_out[3]_i_1_n_0 |                                               |                1 |              4 |         4.00 |
+|  design_1_i/simon_says_0/U0/leds_reg[3]_i_2_n_0                     |                                                     |                                               |                1 |              4 |         4.00 |
+|  design_1_i/simon_says_0/U0/index__0                                |                                                     |                                               |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG                                                      |                                                     |                                               |                5 |              6 |         1.20 |
 |  design_1_i/simon_says_0/U0/level__0                                |                                                     |                                               |                3 |              6 |         2.00 |
-|  design_1_i/simon_says_0/U0/clk_div_inst/CLK                        |                                                     |                                               |                3 |             13 |         4.33 |
+|  design_1_i/simon_says_0/U0/clk_div_inst/CLK                        |                                                     |                                               |                6 |             13 |         2.17 |
 |  clk_IBUF_BUFG                                                      |                                                     | design_1_i/simon_says_0/U0/clk_div_inst/clear |                7 |             27 |         3.86 |
-|  clk_IBUF_BUFG                                                      | design_1_i/simon_says_0/U0/count_to_menu            |                                               |                8 |             32 |         4.00 |
 |  clk_IBUF_BUFG                                                      | design_1_i/Btn_Debouncer_0/U0/delay                 | design_1_i/Btn_Debouncer_0/U0/clear           |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG                                                      | design_1_i/simon_says_0/U0/count_to_menu            |                                               |                8 |             32 |         4.00 |
 +---------------------------------------------------------------------+-----------------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
 
 
