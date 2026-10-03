@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:simon_says:1.0
--- IP Revision: 3
+-- IP Revision: 5
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -61,6 +61,7 @@ ENTITY design_1_simon_says_0_0 IS
     leds : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
     data_in : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     mem_addr : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
+    start_game : IN STD_LOGIC;
     back_to_menu : OUT STD_LOGIC
   );
 END design_1_simon_says_0_0;
@@ -79,6 +80,7 @@ ARCHITECTURE design_1_simon_says_0_0_arch OF design_1_simon_says_0_0 IS
       leds : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
       data_in : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       mem_addr : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
+      start_game : IN STD_LOGIC;
       back_to_menu : OUT STD_LOGIC
     );
   END COMPONENT simon_says;
@@ -86,7 +88,7 @@ ARCHITECTURE design_1_simon_says_0_0_arch OF design_1_simon_says_0_0 IS
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_simon_says_0_0_arch: ARCHITECTURE IS "package_project";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_clk, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
 BEGIN
   U0 : simon_says
@@ -100,6 +102,7 @@ BEGIN
       leds => leds,
       data_in => data_in,
       mem_addr => mem_addr,
+      start_game => start_game,
       back_to_menu => back_to_menu
     );
 END design_1_simon_says_0_0_arch;
