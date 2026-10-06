@@ -1,0 +1,252 @@
+
+*** Running vivado
+    with args -log simon_says_debug_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source simon_says_debug_wrapper.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source simon_says_debug_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.cache/ip 
+Command: synth_design -top simon_says_debug_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7604
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1076.406 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'simon_says_debug_wrapper' [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/hdl/simon_says_debug_wrapper.vhd:22]
+INFO: [Synth 8-3491] module 'simon_says_debug' declared at 'C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/synth/simon_says_debug.vhd:14' bound to instance 'simon_says_debug_i' of component 'simon_says_debug' [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/hdl/simon_says_debug_wrapper.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'simon_says_debug' [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/synth/simon_says_debug.vhd:26]
+INFO: [Synth 8-3491] module 'simon_says_debug_Btn_Debouncer_0_0' declared at 'C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/.Xil/Vivado-32508-sebastian-pc/realtime/simon_says_debug_Btn_Debouncer_0_0_stub.vhdl:5' bound to instance 'Btn_Debouncer_0' of component 'simon_says_debug_Btn_Debouncer_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/synth/simon_says_debug.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'simon_says_debug_Btn_Debouncer_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/.Xil/Vivado-32508-sebastian-pc/realtime/simon_says_debug_Btn_Debouncer_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'simon_says_debug_Simple_RAM_0_1' declared at 'C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/.Xil/Vivado-32508-sebastian-pc/realtime/simon_says_debug_Simple_RAM_0_1_stub.vhdl:5' bound to instance 'Simple_RAM_0' of component 'simon_says_debug_Simple_RAM_0_1' [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/synth/simon_says_debug.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'simon_says_debug_Simple_RAM_0_1' [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/.Xil/Vivado-32508-sebastian-pc/realtime/simon_says_debug_Simple_RAM_0_1_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'simon_says_debug_ila_0_0' declared at 'C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/.Xil/Vivado-32508-sebastian-pc/realtime/simon_says_debug_ila_0_0_stub.vhdl:5' bound to instance 'ila_0' of component 'simon_says_debug_ila_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/synth/simon_says_debug.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'simon_says_debug_ila_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/.Xil/Vivado-32508-sebastian-pc/realtime/simon_says_debug_ila_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'simon_says_debug_simon_v3_0_0' declared at 'C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/.Xil/Vivado-32508-sebastian-pc/realtime/simon_says_debug_simon_v3_0_0_stub.vhdl:5' bound to instance 'simon_v3_0' of component 'simon_says_debug_simon_v3_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/synth/simon_says_debug.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'simon_says_debug_simon_v3_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/.Xil/Vivado-32508-sebastian-pc/realtime/simon_says_debug_simon_v3_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'simon_says_debug_vio_0_0' declared at 'C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/.Xil/Vivado-32508-sebastian-pc/realtime/simon_says_debug_vio_0_0_stub.vhdl:5' bound to instance 'vio_0' of component 'simon_says_debug_vio_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/synth/simon_says_debug.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'simon_says_debug_vio_0_0' [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/.Xil/Vivado-32508-sebastian-pc/realtime/simon_says_debug_vio_0_0_stub.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'simon_says_debug' (1#1) [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/synth/simon_says_debug.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'simon_says_debug_wrapper' (2#1) [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/hdl/simon_says_debug_wrapper.vhd:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1092.973 ; gain = 16.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1092.973 ; gain = 16.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1092.973 ; gain = 16.566
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1092.973 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ip/simon_says_debug_vio_0_0/simon_says_debug_vio_0_0/simon_says_debug_vio_0_0_in_context.xdc] for cell 'simon_says_debug_i/vio_0'
+Finished Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ip/simon_says_debug_vio_0_0/simon_says_debug_vio_0_0/simon_says_debug_vio_0_0_in_context.xdc] for cell 'simon_says_debug_i/vio_0'
+Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ip/simon_says_debug_Btn_Debouncer_0_0/simon_says_debug_Btn_Debouncer_0_0/simon_says_debug_Btn_Debouncer_0_0_in_context.xdc] for cell 'simon_says_debug_i/Btn_Debouncer_0'
+Finished Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ip/simon_says_debug_Btn_Debouncer_0_0/simon_says_debug_Btn_Debouncer_0_0/simon_says_debug_Btn_Debouncer_0_0_in_context.xdc] for cell 'simon_says_debug_i/Btn_Debouncer_0'
+Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ip/simon_says_debug_ila_0_0/simon_says_debug_ila_0_0/simon_says_debug_ila_0_0_in_context.xdc] for cell 'simon_says_debug_i/ila_0'
+Finished Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ip/simon_says_debug_ila_0_0/simon_says_debug_ila_0_0/simon_says_debug_ila_0_0_in_context.xdc] for cell 'simon_says_debug_i/ila_0'
+Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ip/simon_says_debug_simon_v3_0_0/simon_says_debug_simon_v3_0_0/simon_says_debug_simon_v3_0_0_in_context.xdc] for cell 'simon_says_debug_i/simon_v3_0'
+Finished Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ip/simon_says_debug_simon_v3_0_0/simon_says_debug_simon_v3_0_0/simon_says_debug_simon_v3_0_0_in_context.xdc] for cell 'simon_says_debug_i/simon_v3_0'
+Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ip/simon_says_debug_Simple_RAM_0_1/simon_says_debug_Simple_RAM_0_1/simon_says_debug_Simple_RAM_0_1_in_context.xdc] for cell 'simon_says_debug_i/Simple_RAM_0'
+Finished Parsing XDC File [c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ip/simon_says_debug_Simple_RAM_0_1/simon_says_debug_Simple_RAM_0_1/simon_says_debug_Simple_RAM_0_1_in_context.xdc] for cell 'simon_says_debug_i/Simple_RAM_0'
+Parsing XDC File [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/Zybo-Z7-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/Zybo-Z7-Master.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/Zybo-Z7-Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/Zybo-Z7-Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/Zybo-Z7-Master.xdc:16]
+Finished Parsing XDC File [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/Zybo-Z7-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/Zybo-Z7-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/simon_says_debug_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/simon_says_debug_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/simon_says_debug_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1143.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1143.891 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'simon_says_debug_i/ila_0' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'simon_says_debug_i/vio_0' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1151.965 ; gain = 75.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1151.965 ; gain = 75.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for simon_says_debug_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for simon_says_debug_i/vio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for simon_says_debug_i/Btn_Debouncer_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for simon_says_debug_i/ila_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for simon_says_debug_i/simon_v3_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for simon_says_debug_i/Simple_RAM_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1151.965 ; gain = 75.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1151.965 ; gain = 75.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1151.965 ; gain = 75.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1170.734 ; gain = 94.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1170.734 ; gain = 94.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1189.852 ; gain = 113.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1195.617 ; gain = 119.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1195.617 ; gain = 119.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1195.617 ; gain = 119.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1195.617 ; gain = 119.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1195.617 ; gain = 119.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1195.617 ; gain = 119.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |simon_says_debug_Btn_Debouncer_0_0 |         1|
+|2     |simon_says_debug_Simple_RAM_0_1    |         1|
+|3     |simon_says_debug_ila_0_0           |         1|
+|4     |simon_says_debug_simon_v3_0_0      |         1|
+|5     |simon_says_debug_vio_0_0           |         1|
++------+-----------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------+------+
+|      |Cell                                    |Count |
++------+----------------------------------------+------+
+|1     |simon_says_debug_Btn_Debouncer_0_0_bbox |     1|
+|2     |simon_says_debug_Simple_RAM_0_1_bbox    |     1|
+|3     |simon_says_debug_ila_0_0_bbox           |     1|
+|4     |simon_says_debug_simon_v3_0_0_bbox      |     1|
+|5     |simon_says_debug_vio_0_0_bbox           |     1|
+|6     |IBUF                                    |     5|
+|7     |OBUF                                    |     4|
++------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1195.617 ; gain = 119.211
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1195.617 ; gain = 60.219
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1195.617 ; gain = 119.211
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1207.656 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1208.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:01 . Memory (MB): peak = 1208.660 ; gain = 132.254
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/simon_says_debug_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file simon_says_debug_wrapper_utilization_synth.rpt -pb simon_says_debug_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 17:31:16 2026...

@@ -7,96 +7,61 @@ entity StateMachine_P1 is
           btn : in std_logic_vector (3 downto 0);
           sw : in std_logic_vector (3 downto 0);
           reset_game : in std_logic;
-          
           enable_simon : out std_logic;
           game_type : out std_logic_vector (1 downto 0);
-          buttons : out std_logic_vector (3 downto 0);
-          switches : out std_logic_vector (3 downto 0);
+          controls : out std_logic_vector (3 downto 0);
           ready : out std_logic);
 end StateMachine_P1;
 
 architecture Behavioral of StateMachine_P1 is
-    type state_type is (MENU, SIMON, PUZZLE, GAME_OVER);
-    signal state, nxt_state : state_type := MENU;
-    signal game_type_r, nxt_game_type : std_logic_vector (1 downto 0) := "00"; --agregar variable auxiliar
-    signal enable_simon_r : std_logic := '0';
-    
+type state_type is (MENU, SIMON);
+signal state, nxt_state : state_type;
+signal game_type_r : std_logic_vector (1 downto 0);
+
 begin
-    -- Proceso secuencial 
-    process(clk)
+    process(clk, nxt_state)
     begin
         if rising_edge(clk) then
             state <= nxt_state;
-            game_type_r <= nxt_game_type;
+            game_type <= game_type_r;
         end if;
     end process;
 
-    game_type <= game_type_r;
-
-    -- Proceso combinacional
-    process(state, btn, sw, reset_game, game_type_r)
+    
+    process(state, btn, sw, reset_game)
     begin
-        -- Valores por defecto 
-        nxt_state <= state;
-        nxt_game_type <= game_type_r;
-        ready <= '0';
-        buttons <= "0000";
-        switches <= "0000";
-
         case state is
-            when MENU =>
-                if (btn(3) = '1') then -- Easy
-                    nxt_game_type <= "00";
-                    nxt_state <= SIMON;
-                    ready <= '1';
-                elsif (btn(2) = '1') then -- Medium
-                    nxt_game_type <= "01";
-                    nxt_state <= SIMON;
-                    ready <= '1';
-                elsif (btn(1) = '1') then -- Hard
-                    nxt_game_type <= "10";
-                    nxt_state <= SIMON;
-                    ready <= '1';
-                elsif (btn(0) = '1') then -- Puzzle
-                    nxt_game_type <= "11";
-                    nxt_state <= PUZZLE;
-                    ready <= '0';
-                end if;
-
-            when SIMON =>
-                buttons <= btn;
-                switches <= "0000";
+        
+        when MENU =>
+            enable_simon <= '0';
+            controls <= "0000";
+            if (btn(3) = '1') then --Easy
+                ready <= '1';
+                game_type_r <= "00";
+                nxt_state <= SIMON;
+            elsif (btn(2) = '1') then --Medium
+                ready <= '1';
+                game_type_r <= "01";
+                nxt_state <= SIMON;
+            elsif (btn(1) = '1') then --Hard
+                ready <= '1';
+                game_type_r <= "10";
+                nxt_state <= SIMON;
+            else --Puzzle
                 ready <= '0';
-                if reset_game = '1' then
-                    nxt_state <= GAME_OVER;
-                end if;
-
-            when PUZZLE =>
-                buttons <= btn;
-                switches <= sw;
-                ready <= '0';
-                if reset_game = '1' then
-                    nxt_state <= GAME_OVER;
-                end if;
-
-            when GAME_OVER =>
-                ready <= '0';
+                game_type_r <= "11";
                 nxt_state <= MENU;
-
+            end if;
+        
+        when SIMON =>
+            ready <= '0';
+            enable_simon <= '1';
+            controls <= btn;
+            if reset_game = '1' then
+                nxt_state <= MENU;
+            end if;
+        
         end case;
     end process;
-    
-    -- Lógica combinacional para que empiece el simón
-    process(clk, state) begin
-        if rising_edge(clk) then
-            if state = SIMON then
-                enable_simon_r <= '1';
-            else 
-                enable_simon_r <= '0';
-            end if;
-        end if;
-    end process;
-    
-    enable_simon <= enable_simon_r;
 
 end Behavioral;

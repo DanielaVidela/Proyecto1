@@ -1,0 +1,21 @@
+// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// --------------------------------------------------------------------------------
+// Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+// Date        : Sun Oct  4 17:27:04 2026
+// Host        : sebastian-pc running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ip/simon_says_debug_Simple_RAM_0_1/simon_says_debug_Simple_RAM_0_1_stub.v
+// Design      : simon_says_debug_Simple_RAM_0_1
+// Purpose     : Stub declaration of top-level module interface
+// Device      : xc7z010clg400-1
+// --------------------------------------------------------------------------------
+
+// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
+// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
+// Please paste the declaration into a Verilog source file or add the file as an additional source.
+(* x_core_info = "Simple_RAM,Vivado 2020.1" *)
+module simon_says_debug_Simple_RAM_0_1(address, data_out)
+/* synthesis syn_black_box black_box_pad_pin="address[4:0],data_out[3:0]" */;
+  input [4:0]address;
+  output [3:0]data_out;
+endmodule

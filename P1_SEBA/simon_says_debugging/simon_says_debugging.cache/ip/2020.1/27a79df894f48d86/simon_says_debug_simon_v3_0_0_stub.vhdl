@@ -1,0 +1,41 @@
+-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+-- Date        : Sun Oct  4 16:43:11 2026
+-- Host        : sebastian-pc running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+--               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ simon_says_debug_simon_v3_0_0_stub.vhdl
+-- Design      : simon_says_debug_simon_v3_0_0
+-- Purpose     : Stub declaration of top-level module interface
+-- Device      : xc7z010clg400-1
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
+  Port ( 
+    clk : in STD_LOGIC;
+    difficult : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    btn : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    leds : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    data_in : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    mem_addr : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    start_game : in STD_LOGIC;
+    back_to_menu : out STD_LOGIC;
+    index_r_ila : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    nxt_index_ila : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    level_r_ila : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    nxt_level_ila : out STD_LOGIC_VECTOR ( 5 downto 0 )
+  );
+
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
+
+architecture stub of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
+attribute syn_black_box : boolean;
+attribute black_box_pad_pin : string;
+attribute syn_black_box of stub : architecture is true;
+attribute black_box_pad_pin of stub : architecture is "clk,difficult[1:0],btn[3:0],leds[3:0],data_in[3:0],mem_addr[4:0],start_game,back_to_menu,index_r_ila[4:0],nxt_index_ila[4:0],level_r_ila[5:0],nxt_level_ila[5:0]";
+attribute x_core_info : string;
+attribute x_core_info of stub : architecture is "simon_v3,Vivado 2020.1";
+begin
+end;

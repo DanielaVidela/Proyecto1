@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xEB1CB81F7B4ABE5D",
+      "boundary_crc": "0xDA83A0902CD1FF0B",
       "device": "xc7z010clg400-1",
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
@@ -11,24 +11,17 @@
     },
     "design_tree": {
       "Btn_Debouncer_0": "",
-      "Mult2_0": "",
-      "RNG_0": "",
-      "Sequence_Memory_0": "",
-      "simon_says_0": "",
       "vio_0": "",
+      "ila_0": "",
       "MUX_VIO_0": "",
       "axi_traffic_gen_0": "",
-      "rst_clk_100M": "",
-      "RGB_Driver_0": "",
-      "I2S_0": "",
-      "clk_wiz_0": "",
       "StateMachine_P1_0": "",
-      "Audio_Driver_0": "",
-      "ila_0": "",
-      "juegoswitches_0": "",
       "Mult2_inputs_0": "",
-      "axi_traffic_gen_1": "",
-      "rst_clk_wiz_0_12M": ""
+      "rst_clk_100M": "",
+      "simon_v3_0": "",
+      "Sequence_Memory_0": "",
+      "RGB_Driver_0": "",
+      "juegoswitches_0": ""
     },
     "ports": {
       "clk": {
@@ -76,45 +69,6 @@
       "RGB_B": {
         "direction": "O"
       },
-      "ac_bclk": {
-        "direction": "O"
-      },
-      "ac_pblrc": {
-        "direction": "O"
-      },
-      "ac_pbdat": {
-        "direction": "O"
-      },
-      "ac_mclk": {
-        "direction": "O",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "/clk_wiz_0_clk_out1",
-            "value_src": "ip_prop"
-          },
-          "FREQ_HZ": {
-            "value": "12288000",
-            "value_src": "ip_prop"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "ip_prop"
-          }
-        }
-      },
-      "reset_rtl": {
-        "type": "rst",
-        "direction": "I",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_HIGH"
-          }
-        }
-      },
       "led": {
         "direction": "O",
         "left": "3",
@@ -125,22 +79,6 @@
       "Btn_Debouncer_0": {
         "vlnv": "xilinx.com:user:Btn_Debouncer:1.0",
         "xci_name": "design_1_Btn_Debouncer_0_0"
-      },
-      "Mult2_0": {
-        "vlnv": "xilinx.com:user:Mult2:1.0",
-        "xci_name": "design_1_Mult2_0_0"
-      },
-      "RNG_0": {
-        "vlnv": "xilinx.com:user:RNG:1.0",
-        "xci_name": "design_1_RNG_0_0"
-      },
-      "Sequence_Memory_0": {
-        "vlnv": "xilinx.com:user:Sequence_Memory:1.0",
-        "xci_name": "design_1_Sequence_Memory_0_1"
-      },
-      "simon_says_0": {
-        "vlnv": "xilinx.com:user:simon_says:1.0",
-        "xci_name": "design_1_simon_says_0_0"
       },
       "vio_0": {
         "vlnv": "xilinx.com:ip:vio:3.0",
@@ -163,9 +101,54 @@
           }
         }
       },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "design_1_ila_0_0",
+        "parameters": {
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "13"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "2"
+          },
+          "C_PROBE10_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE4_WIDTH": {
+            "value": "5"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE6_WIDTH": {
+            "value": "5"
+          },
+          "C_PROBE7_WIDTH": {
+            "value": "5"
+          },
+          "C_PROBE8_WIDTH": {
+            "value": "6"
+          },
+          "C_PROBE9_WIDTH": {
+            "value": "6"
+          }
+        }
+      },
       "MUX_VIO_0": {
         "vlnv": "xilinx.com:user:MUX_VIO:1.0",
-        "xci_name": "design_1_MUX_VIO_0_0"
+        "xci_name": "design_1_MUX_VIO_0_1"
       },
       "axi_traffic_gen_0": {
         "vlnv": "xilinx.com:ip:axi_traffic_gen:3.0",
@@ -173,9 +156,6 @@
         "parameters": {
           "C_ATG_MODE": {
             "value": "AXI4-Lite"
-          },
-          "C_ATG_MODE_L2": {
-            "value": "Advanced"
           },
           "C_ATG_SYSINIT_MODES": {
             "value": "System_Test"
@@ -215,136 +195,33 @@
           }
         }
       },
-      "rst_clk_100M": {
-        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "xci_name": "design_1_rst_clk_100M_0"
-      },
-      "RGB_Driver_0": {
-        "vlnv": "xilinx.com:user:RGB_Driver:1.0",
-        "xci_name": "design_1_RGB_Driver_0_0"
-      },
-      "I2S_0": {
-        "vlnv": "xilinx.com:user:I2S:1.0",
-        "xci_name": "design_1_I2S_0_0"
-      },
-      "clk_wiz_0": {
-        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
-        "xci_name": "design_1_clk_wiz_0_0",
-        "parameters": {
-          "CLKOUT1_JITTER": {
-            "value": "360.948"
-          },
-          "CLKOUT1_PHASE_ERROR": {
-            "value": "301.601"
-          },
-          "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "12.288"
-          },
-          "CLK_OUT1_PORT": {
-            "value": "MCLK"
-          },
-          "MMCM_CLKFBOUT_MULT_F": {
-            "value": "48.000"
-          },
-          "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "78.125"
-          },
-          "MMCM_DIVCLK_DIVIDE": {
-            "value": "5"
-          }
-        }
-      },
       "StateMachine_P1_0": {
         "vlnv": "xilinx.com:user:StateMachine_P1:1.0",
         "xci_name": "design_1_StateMachine_P1_0_0"
-      },
-      "Audio_Driver_0": {
-        "vlnv": "xilinx.com:user:Audio_Driver:1.0",
-        "xci_name": "design_1_Audio_Driver_0_0"
-      },
-      "ila_0": {
-        "vlnv": "xilinx.com:ip:ila:6.2",
-        "xci_name": "design_1_ila_0_0",
-        "parameters": {
-          "C_ENABLE_ILA_AXI_MON": {
-            "value": "false"
-          },
-          "C_MONITOR_TYPE": {
-            "value": "Native"
-          },
-          "C_NUM_OF_PROBES": {
-            "value": "7"
-          },
-          "C_PROBE0_WIDTH": {
-            "value": "4"
-          },
-          "C_PROBE1_WIDTH": {
-            "value": "5"
-          },
-          "C_PROBE4_WIDTH": {
-            "value": "2"
-          },
-          "C_PROBE5_WIDTH": {
-            "value": "4"
-          }
-        }
-      },
-      "juegoswitches_0": {
-        "vlnv": "xilinx.com:user:juegoswitches:1.0",
-        "xci_name": "design_1_juegoswitches_0_0"
       },
       "Mult2_inputs_0": {
         "vlnv": "xilinx.com:user:Mult2_inputs:1.0",
         "xci_name": "design_1_Mult2_inputs_0_0"
       },
-      "axi_traffic_gen_1": {
-        "vlnv": "xilinx.com:ip:axi_traffic_gen:3.0",
-        "xci_name": "design_1_axi_traffic_gen_1_0",
-        "parameters": {
-          "C_ATG_MODE": {
-            "value": "AXI4-Lite"
-          },
-          "C_ATG_SYSINIT_MODES": {
-            "value": "System_Test"
-          },
-          "C_ATG_SYSTEM_CMD_MAX_RETRY": {
-            "value": "2147483647"
-          },
-          "C_ATG_SYSTEM_INIT_ADDR_MIF": {
-            "value": "../../../../../../../COE_files/audio_address.coe"
-          },
-          "C_ATG_SYSTEM_INIT_CTRL_MIF": {
-            "value": "../../../../../../../COE_files/audio_control.coe"
-          },
-          "C_ATG_SYSTEM_INIT_DATA_MIF": {
-            "value": "../../../../../../../COE_files/audio_data.coe"
-          },
-          "C_ATG_SYSTEM_INIT_MASK_MIF": {
-            "value": "../../../../../../../COE_files/audio_mask.coe"
-          }
-        },
-        "addressing": {
-          "address_spaces": {
-            "Reg1": {
-              "range": "4G",
-              "width": "32"
-            }
-          },
-          "interface_ports": {
-            "M_AXI_LITE_CH1": {
-              "mode": "Master",
-              "address_space_ref": "Reg1",
-              "base_address": {
-                "minimum": "0x00000000",
-                "maximum": "0xFFFFFFFF"
-              }
-            }
-          }
-        }
-      },
-      "rst_clk_wiz_0_12M": {
+      "rst_clk_100M": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "xci_name": "design_1_rst_clk_wiz_0_12M_1"
+        "xci_name": "design_1_rst_clk_100M_1"
+      },
+      "simon_v3_0": {
+        "vlnv": "xilinx.com:user:simon_v3:1.0",
+        "xci_name": "design_1_simon_v3_0_0"
+      },
+      "Sequence_Memory_0": {
+        "vlnv": "xilinx.com:user:Sequence_Memory:1.0",
+        "xci_name": "design_1_Sequence_Memory_0_1"
+      },
+      "RGB_Driver_0": {
+        "vlnv": "xilinx.com:user:RGB_Driver:1.0",
+        "xci_name": "design_1_RGB_Driver_0_0"
+      },
+      "juegoswitches_0": {
+        "vlnv": "xilinx.com:user:juegoswitches:1.0",
+        "xci_name": "design_1_juegoswitches_0_0"
       }
     },
     "interface_nets": {
@@ -353,12 +230,6 @@
           "axi_traffic_gen_0/M_AXI_LITE_CH1",
           "RGB_Driver_0/S00_AXI"
         ]
-      },
-      "axi_traffic_gen_1_M_AXI_LITE_CH1": {
-        "interface_ports": [
-          "axi_traffic_gen_1/M_AXI_LITE_CH1",
-          "Audio_Driver_0/S00_AXI"
-        ]
       }
     },
     "nets": {
@@ -366,25 +237,16 @@
         "ports": [
           "clk",
           "Btn_Debouncer_0/clk",
-          "RNG_0/clk",
-          "Sequence_Memory_0/clk",
-          "simon_says_0/clk",
           "vio_0/clk",
+          "ila_0/clk",
           "axi_traffic_gen_0/s_axi_aclk",
+          "StateMachine_P1_0/clk",
           "rst_clk_100M/slowest_sync_clk",
+          "simon_v3_0/clk",
+          "Sequence_Memory_0/clk",
           "RGB_Driver_0/clk",
           "RGB_Driver_0/s00_axi_aclk",
-          "StateMachine_P1_0/clk",
-          "clk_wiz_0/clk_in1",
-          "Audio_Driver_0/clk",
-          "ila_0/clk",
           "juegoswitches_0/clk"
-        ]
-      },
-      "RNG_0_rand_led": {
-        "ports": [
-          "RNG_0/rand_led",
-          "Sequence_Memory_0/data_in"
         ]
       },
       "Btn_Debouncer_0_btn_deb": {
@@ -400,18 +262,6 @@
           "juegoswitches_0/btn"
         ]
       },
-      "Mult2_0_output": {
-        "ports": [
-          "Mult2_0/out1",
-          "Sequence_Memory_0/addr"
-        ]
-      },
-      "RNG_0_addr": {
-        "ports": [
-          "RNG_0/addr",
-          "Mult2_0/in2"
-        ]
-      },
       "sw_0_1": {
         "ports": [
           "sw",
@@ -419,82 +269,10 @@
           "juegoswitches_0/sw"
         ]
       },
-      "simon_says_0_leds": {
-        "ports": [
-          "simon_says_0/leds",
-          "ila_0/probe0",
-          "Mult2_inputs_0/in2"
-        ]
-      },
-      "Sequence_Memory_0_data_out": {
-        "ports": [
-          "Sequence_Memory_0/data_out",
-          "simon_says_0/data_in"
-        ]
-      },
-      "simon_says_0_mem_addr": {
-        "ports": [
-          "simon_says_0/mem_addr",
-          "Mult2_0/in1",
-          "ila_0/probe1"
-        ]
-      },
-      "simon_says_0_back_to_menu": {
-        "ports": [
-          "simon_says_0/back_to_menu",
-          "StateMachine_P1_0/reset_game",
-          "ila_0/probe2"
-        ]
-      },
-      "vio_0_probe_out0": {
-        "ports": [
-          "vio_0/probe_out0",
-          "MUX_VIO_0/enable_b"
-        ]
-      },
-      "vio_0_probe_out1": {
-        "ports": [
-          "vio_0/probe_out1",
-          "MUX_VIO_0/game_type_b"
-        ]
-      },
-      "vio_0_probe_out2": {
-        "ports": [
-          "vio_0/probe_out2",
-          "MUX_VIO_0/controls_b"
-        ]
-      },
-      "vio_0_probe_out3": {
-        "ports": [
-          "vio_0/probe_out3",
-          "MUX_VIO_0/ready_b"
-        ]
-      },
       "StateMachine_P1_0_enable_simon": {
         "ports": [
           "StateMachine_P1_0/enable_simon",
-          "MUX_VIO_0/enable_a",
-          "Mult2_inputs_0/selector"
-        ]
-      },
-      "MUX_VIO_0_enable_out": {
-        "ports": [
-          "MUX_VIO_0/enable_out",
-          "simon_says_0/start_game",
-          "ila_0/probe3"
-        ]
-      },
-      "StateMachine_P1_0_controls": {
-        "ports": [
-          "StateMachine_P1_0/buttons",
-          "MUX_VIO_0/controls_a"
-        ]
-      },
-      "MUX_VIO_0_controls_out": {
-        "ports": [
-          "MUX_VIO_0/controls_out",
-          "simon_says_0/btn",
-          "ila_0/probe5"
+          "MUX_VIO_0/enable_a"
         ]
       },
       "StateMachine_P1_0_game_type": {
@@ -503,13 +281,92 @@
           "MUX_VIO_0/game_type_a"
         ]
       },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "ila_0/probe2",
+          "MUX_VIO_0/enable_b"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "ila_0/probe0",
+          "MUX_VIO_0/game_type_b"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "ila_0/probe10",
+          "MUX_VIO_0/controls_b"
+        ]
+      },
+      "MUX_VIO_0_enable_out": {
+        "ports": [
+          "MUX_VIO_0/enable_out",
+          "Mult2_inputs_0/selector",
+          "simon_v3_0/start_game"
+        ]
+      },
       "MUX_VIO_0_game_type_out": {
         "ports": [
           "MUX_VIO_0/game_type_out",
-          "simon_says_0/difficult",
-          "RGB_Driver_0/difficulty",
-          "Audio_Driver_0/difficulty",
-          "ila_0/probe4"
+          "ila_0/probe11",
+          "simon_v3_0/difficult",
+          "RGB_Driver_0/difficulty"
+        ]
+      },
+      "Sequence_Memory_0_data_out": {
+        "ports": [
+          "Sequence_Memory_0/data_out",
+          "ila_0/probe1",
+          "simon_v3_0/data_in"
+        ]
+      },
+      "simon_v3_0_nxt_level_ila": {
+        "ports": [
+          "simon_v3_0/nxt_level_ila",
+          "ila_0/probe9"
+        ]
+      },
+      "simon_v3_0_level_r_ila": {
+        "ports": [
+          "simon_v3_0/level_r_ila",
+          "ila_0/probe8"
+        ]
+      },
+      "simon_v3_0_nxt_index_ila": {
+        "ports": [
+          "simon_v3_0/nxt_index_ila",
+          "ila_0/probe7"
+        ]
+      },
+      "simon_v3_0_index_r_ila": {
+        "ports": [
+          "simon_v3_0/index_r_ila",
+          "ila_0/probe6"
+        ]
+      },
+      "simon_v3_0_back_to_menu": {
+        "ports": [
+          "simon_v3_0/back_to_menu",
+          "ila_0/probe5",
+          "StateMachine_P1_0/reset_game"
+        ]
+      },
+      "simon_v3_0_mem_addr": {
+        "ports": [
+          "simon_v3_0/mem_addr",
+          "ila_0/probe4",
+          "Sequence_Memory_0/addr"
+        ]
+      },
+      "simon_v3_0_leds": {
+        "ports": [
+          "simon_v3_0/leds",
+          "ila_0/probe3",
+          "Mult2_inputs_0/in2"
         ]
       },
       "StateMachine_P1_0_ready": {
@@ -518,13 +375,10 @@
           "MUX_VIO_0/ready_a"
         ]
       },
-      "MUX_VIO_0_ready_out": {
+      "vio_0_probe_out3": {
         "ports": [
-          "MUX_VIO_0/ready_out",
-          "RNG_0/ready",
-          "Sequence_Memory_0/io",
-          "Mult2_0/selector",
-          "ila_0/probe6"
+          "vio_0/probe_out3",
+          "MUX_VIO_0/ready_b"
         ]
       },
       "vio_0_probe_out4": {
@@ -533,11 +387,47 @@
           "MUX_VIO_0/sel"
         ]
       },
+      "MUX_VIO_0_controls_out": {
+        "ports": [
+          "MUX_VIO_0/controls_out",
+          "simon_v3_0/btn"
+        ]
+      },
+      "StateMachine_P1_0_buttons": {
+        "ports": [
+          "StateMachine_P1_0/controls",
+          "MUX_VIO_0/controls_a"
+        ]
+      },
+      "MUX_VIO_0_ready_out": {
+        "ports": [
+          "MUX_VIO_0/ready_out",
+          "Sequence_Memory_0/io"
+        ]
+      },
+      "juegoswitches_0_led": {
+        "ports": [
+          "juegoswitches_0/led",
+          "Mult2_inputs_0/in1"
+        ]
+      },
+      "Mult2_inputs_0_out1": {
+        "ports": [
+          "Mult2_inputs_0/out1",
+          "led"
+        ]
+      },
       "rst_clk_100M_peripheral_aresetn": {
         "ports": [
           "rst_clk_100M/peripheral_aresetn",
           "axi_traffic_gen_0/s_axi_aresetn",
           "RGB_Driver_0/s00_axi_aresetn"
+        ]
+      },
+      "Sequence_Memory_0_mem_update": {
+        "ports": [
+          "Sequence_Memory_0/mem_update",
+          "ila_0/probe12"
         ]
       },
       "RGB_Driver_0_RGB_R": {
@@ -557,67 +447,6 @@
           "RGB_Driver_0/RGB_B",
           "RGB_B"
         ]
-      },
-      "I2S_0_bclk": {
-        "ports": [
-          "I2S_0/bclk",
-          "ac_bclk"
-        ]
-      },
-      "I2S_0_channel_en": {
-        "ports": [
-          "I2S_0/channel_en",
-          "ac_pblrc"
-        ]
-      },
-      "I2S_0_out_data": {
-        "ports": [
-          "I2S_0/out_data",
-          "ac_pbdat"
-        ]
-      },
-      "clk_wiz_0_MCLK": {
-        "ports": [
-          "clk_wiz_0/MCLK",
-          "I2S_0/clk",
-          "ac_mclk",
-          "Audio_Driver_0/s00_axi_aclk",
-          "rst_clk_wiz_0_12M/slowest_sync_clk",
-          "axi_traffic_gen_1/s_axi_aclk"
-        ]
-      },
-      "Audio_Driver_0_audio_output": {
-        "ports": [
-          "Audio_Driver_0/audio_output",
-          "I2S_0/data_value"
-        ]
-      },
-      "reset_rtl_1": {
-        "ports": [
-          "reset_rtl",
-          "clk_wiz_0/reset",
-          "rst_clk_100M/ext_reset_in",
-          "rst_clk_wiz_0_12M/ext_reset_in"
-        ]
-      },
-      "Mult2_inputs_0_out1": {
-        "ports": [
-          "Mult2_inputs_0/out1",
-          "led"
-        ]
-      },
-      "juegoswitches_0_led": {
-        "ports": [
-          "juegoswitches_0/led",
-          "Mult2_inputs_0/in1"
-        ]
-      },
-      "rst_clk_wiz_0_12M_peripheral_aresetn": {
-        "ports": [
-          "rst_clk_wiz_0_12M/peripheral_aresetn",
-          "Audio_Driver_0/s00_axi_aresetn",
-          "axi_traffic_gen_1/s_axi_aresetn"
-        ]
       }
     },
     "addressing": {
@@ -625,18 +454,10 @@
         "address_spaces": {
           "Reg1": {
             "range": "4G",
-            "width": "32"
-          }
-        }
-      },
-      "/axi_traffic_gen_1": {
-        "address_spaces": {
-          "Reg1": {
-            "range": "4G",
             "width": "32",
             "segments": {
-              "SEG_Audio_Driver_0_S00_AXI_reg": {
-                "address_block": "/Audio_Driver_0/S00_AXI/S00_AXI_reg",
+              "SEG_RGB_Driver_0_S00_AXI_reg": {
+                "address_block": "/RGB_Driver_0/S00_AXI/S00_AXI_reg",
                 "offset": "0x44A00000",
                 "range": "64K"
               }

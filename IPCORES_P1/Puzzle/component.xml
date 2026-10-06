@@ -36,7 +36,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>bed9cd9f</spirit:value>
+            <spirit:value>6971e7eb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -52,7 +52,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>61fc82b3</spirit:value>
+            <spirit:value>6971e7eb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -136,15 +136,24 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>flag</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
   </spirit:model>
   <spirit:fileSets>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>SEP.srcs/constrs_1/new/constrains.xdc</spirit:name>
-        <spirit:userFileType>xdc</spirit:userFileType>
-      </spirit:file>
       <spirit:file>
         <spirit:name>SEP.srcs/sources_1/new/debouncer.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
@@ -152,7 +161,7 @@
       <spirit:file>
         <spirit:name>SEP.srcs/sources_1/new/juego.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_4281f26e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_4e020046</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -199,32 +208,21 @@
       </xilinx:taxonomies>
       <xilinx:displayName>juegoswitches_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>3</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-10-03T22:39:43Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-10-06T18:32:39Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@33d1e5cf_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@658e8555_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c9581ec_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@163979dd_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@27b9050b_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@1be21729_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@14cd2236_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f420e5a_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2356bc8b_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e9f42a3_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f9c7046_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@24700fff_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@28717a8e_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e104bd2_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@581f92cc_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@557b91a8_ARCHIVE_LOCATION">c:/users/lorenzo/onedrive/documentos/pro_sep/proyecto1_git/ipcores_p1/puzzle</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dc19b84_ARCHIVE_LOCATION">c:/Users/Lorenzo/Documents/Proyecto1-main/IPCORES_P1/Puzzle</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53536e97_ARCHIVE_LOCATION">c:/Users/Lorenzo/Documents/Proyecto1-main/IPCORES_P1/Puzzle</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@311a53f3_ARCHIVE_LOCATION">c:/Users/Lorenzo/Documents/Proyecto1-main/IPCORES_P1/Puzzle</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4adcde5c_ARCHIVE_LOCATION">c:/Users/Lorenzo/Documents/Proyecto1-main/IPCORES_P1/Puzzle</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9b2250b_ARCHIVE_LOCATION">c:/Users/Lorenzo/Documents/Proyecto1-main/IPCORES_P1/Puzzle</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="9970de36"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="ef081ec8"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="17780bc4"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="83289228"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="b8cb720e"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

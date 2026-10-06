@@ -1,0 +1,33 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.975538",
+   "Default View_TopLeft":"-85,204",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x -40 -y 50 -defaultsOSRD
+preplace portBus btn -pg 1 -lvl 0 -x -40 -y 80 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 4 -x 840 -y 470 -defaultsOSRD
+preplace inst Btn_Debouncer_0 -pg 1 -lvl 1 -x 110 -y 70 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 720 -y 360 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 1 -x 110 -y 210 -defaultsOSRD
+preplace inst simon_v3_0 -pg 1 -lvl 2 -x 420 -y 400 -defaultsOSRD
+preplace inst Simple_RAM_0 -pg 1 -lvl 1 -x 110 -y 420 -defaultsOSRD
+preplace netloc Simple_RAM_0_data_out 1 1 2 250 520 560J
+preplace netloc clk_0_1 1 0 3 -20 140 260 260 NJ
+preplace netloc button_0_1 1 0 1 NJ 80
+preplace netloc simon_says_0_mem_addr 1 0 3 -20 280 NJ 280 550
+preplace netloc simon_says_0_leds 1 2 2 570 520 810J
+preplace netloc vio_0_probe_out1 1 1 2 230 530 580J
+preplace netloc vio_0_probe_out0 1 1 2 240 270 580J
+preplace netloc Btn_Debouncer_0_btn_deb 1 1 1 250 70n
+preplace netloc simon_v3_0_back_to_menu 1 2 1 N 380
+preplace netloc simon_v3_0_index_r_ila 1 2 1 N 400
+preplace netloc simon_v3_0_nxt_index_ila 1 2 1 N 420
+preplace netloc simon_v3_0_level_r_ila 1 2 1 N 440
+preplace netloc simon_v3_0_nxt_level_ila 1 2 1 N 460
+levelinfo -pg 1 -40 110 420 720 840
+pagesize -pg 1 -db -bbox -sgen -140 0 940 540
+"
+}
+0

@@ -36,7 +36,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e3dabe63</spirit:value>
+            <spirit:value>f6ae1205</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -52,7 +52,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e3dabe63</spirit:value>
+            <spirit:value>f6ae1205</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -66,7 +66,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c390238d</spirit:value>
+            <spirit:value>0a07c0e2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -92,23 +92,6 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>data_in</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">1</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
               <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
@@ -149,6 +132,40 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>mem_update</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>RNG_update</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
     <spirit:modelParameters>
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
@@ -164,7 +181,7 @@
       <spirit:file>
         <spirit:name>Sequence_Memory.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_e3dabe63</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_f6ae1205</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -225,21 +242,104 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Sequence_Memory_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-09-23T16:07:32Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>11</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-10-06T17:10:23Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@68cf77ad_ARCHIVE_LOCATION">c:/users/sbast/desktop/p1_2.0/p1/ipcores_p1/sequence_memory/sequence_memory.srcs/sources_1/new</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@20d48c4c_ARCHIVE_LOCATION">c:/users/sbast/desktop/p1_2.0/p1/ipcores_p1/sequence_memory/sequence_memory.srcs/sources_1/new</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3695e417_ARCHIVE_LOCATION">c:/users/sbast/desktop/p1_2.0/p1/ipcores_p1/sequence_memory/sequence_memory.srcs/sources_1/new</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@e397406_ARCHIVE_LOCATION">c:/users/sbast/desktop/p1_2.0/p1/ipcores_p1/sequence_memory/sequence_memory.srcs/sources_1/new</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@796e812b_ARCHIVE_LOCATION">c:/users/sbast/desktop/p1_2.0/p1/ipcores_p1/sequence_memory/sequence_memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b733991_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62721536_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b9895bb_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b9d9876_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c790d_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d07f30_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@964dfae_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67b05300_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30136d0e_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1937f342_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1375a5d1_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@212e5e37_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dae0ca9_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b9c1add_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d60abb3_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59a7e8b4_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bd81097_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64ccf112_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@607269ab_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4272eff3_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ef7c1f1_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32c440b6_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5413660_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b03ea30_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49d6b54a_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d4fd76_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dfb9316_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e252744_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e93f204_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@789b593b_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d93edf0_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7322a33c_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@629dfc3b_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d021ff9_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@165059ec_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@649ca625_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b64d3c0_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ddd397c_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@115c111c_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7802b0f6_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@231e43f4_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c12f38c_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bde9a86_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5247321b_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c2b2aac_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2faa2be2_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dc725b6_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46ea7e12_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17b5d89_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@100b0597_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38ecfa13_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c50c1a1_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b298df7_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@435b384_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50392707_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c103c64_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28409c28_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63536990_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a110f6c_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a14f6f_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f81dadf_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fde3fc3_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43314edc_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a626066_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@662cfdcd_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@484461d9_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a7f5f92_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@465e29f3_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@151695e9_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66292403_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41752e70_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f8c37e_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22ef9d4c_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59d71c66_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3502366d_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d3846e7_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cb834b5_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d866e05_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e385afb_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25feb6aa_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2284e987_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c8dc4f4_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fc7862d_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/IPCORES_P1/Sequence_Memory/Sequence_Memory.srcs/sources_1/new</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3dbfdd35"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="8a5526dc"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5d2835d6"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="896acad3"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="63db1e5b"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="ca967ce5"/>
     </xilinx:packagingInfo>

@@ -1,0 +1,230 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 15248
+License: Customer
+
+Current time: 	Tue Oct 06 15:33:17 CLST 2026
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Lorenzo
+User home directory: C:/Users/Lorenzo
+User working directory: C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP
+User country: 	CL
+User language: 	es
+User locale: 	es_CL
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/Lorenzo/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/Lorenzo/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/Lorenzo/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/vivado.log
+Vivado journal file location: 	C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/vivado.jou
+Engine tmp dir: 	C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/.Xil/Vivado-15248-DESKTOP-HDA05IJ
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_SDK: C:/Xilinx/Vitis/2020.1
+XILINX_VITIS: C:/Xilinx/Vitis/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	160 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,051 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Lorenzo\Documents\Proyecto1-main\Proy1_SEP\Proy1_SEP.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/Proy1_SEP.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,051 MB. GUI used memory: 57 MB. Current time: 10/6/26, 3:33:18 PM CLST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 82 MB (+83295kb) [00:00:22]
+// [Engine Memory]: 1,051 MB (+950614kb) [00:00:22]
+// [GUI Memory]: 98 MB (+12462kb) [00:00:22]
+// [GUI Memory]: 114 MB (+11434kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  4323 ms.
+// Tcl Message: open_project C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/Proy1_SEP.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1-main/Proy1_SEP' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Lorenzo/Documents/Proyecto1-main/IPCORES_P1'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Lorenzo/Documents/Proyecto1-main/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:10 . Memory (MB): peak = 1061.426 ; gain = 0.000 
+// Project name: Proy1_SEP; location: C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// a (cs): Critical Messages: addNotify
+// [GUI Memory]: 126 MB (+7046kb) [00:00:31]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cs)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd)]", 1); // B (F, cs)
+// PAPropertyPanels.initPanels (design_1.bd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd), design_1_i : design_1 (design_1.bd)]", 2, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd), design_1_i : design_1 (design_1.bd)]", 2, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd), design_1_i : design_1 (design_1.bd)]", 2, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd), design_1_i : design_1 (design_1.bd), design_1_MUX_VIO_0_1 (design_1_MUX_VIO_0_1.xci)]", 4, false, false, false, false, false, true); // B (F, cs) - Double Click
+// bz (cs):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:user:Btn_Debouncer:1.0 - Btn_Debouncer_0 Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0 Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0 
+// Tcl Message: INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details. 
+// Tcl Message: Successfully read diagram <design_1> from BD file <C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/design_1.bd> 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,114 MB. GUI used memory: 80 MB. Current time: 10/6/26, 3:34:09 PM CLST
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 1,114 MB (+10491kb) [00:01:10]
+// [GUI Memory]: 136 MB (+3752kb) [00:01:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  3107 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1153.215 ; gain = 41.766 
+dismissDialog("Open Block Design"); // bz (cs)
+selectButton(PAResourceQtoS.SystemTab_REPORT_IP_STATUS, "Report IP Status"); // h (ds, cs)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// bz (cs):  Report IP Status : addNotify
+dismissDialog("Report IP Status"); // bz (cs)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// bz (cs):  Upgrade IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:juegoswitches:1.0 [get_ips  design_1_juegoswitches_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded design_1_juegoswitches_0_0 (juegoswitches_v1_0 1.0) from revision 5 to revision 2 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <C:\Users\Lorenzo\Documents\Proyecto1-main\Proy1_SEP\Proy1_SEP.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips design_1_juegoswitches_0_0] -no_script -sync -force -quiet 
+// a (cs): Critical Messages: addNotify
+// aI (cs): Generate Output Products: addNotify
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Skip"); // a (aI)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 419ms to process. Increasing delay to 3000 ms.
+dismissDialog("Generate Output Products"); // aI (cs)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cs)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL (aI, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd), design_1_i : design_1 (design_1.bd)]", 2); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd), design_1_i : design_1 (design_1.bd)]", 2, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE, "Reset Output Products..."); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE
+// aI (cs): Reset Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_RESET_OUTPUT_PRODUCTS, "Reset"); // a (aI)
+// bz (cs):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: reset_target all [get_files  C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: export_ip_user_files -of_objects  [get_files  C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet 
+// [GUI Memory]: 151 MB (+8918kb) [00:01:49]
+dismissDialog("Managing Output Products"); // bz (cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd), design_1_i : design_1 (design_1.bd)]", 2, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (cs): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bz (cs):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: generate_target all [get_files  C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/design_1.bd] 
+// Tcl Message: Wrote  : <C:\Users\Lorenzo\Documents\Proyecto1-main\Proy1_SEP\Proy1_SEP.srcs\sources_1\bd\design_1\design_1.bd>  
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-1293] The path 'C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/hdl' already exists, is a directory, but is not writable.  
+// 'bv' command handler elapsed time: 4 seconds
+// [Engine Memory]: 1,262 MB (+96761kb) [00:02:00]
+// Tcl Message: VHDL Output written to : C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/sim/design_1.vhd 
+// Tcl Message: ERROR: [Common 17-1293] The path 'C:/Users/Lorenzo/Documents/Proyecto1-main/Proy1_SEP/Proy1_SEP.srcs/sources_1/bd/design_1/hdl' already exists, is a directory, but is not writable. 
+// a (cs): Critical Messages: addNotify
+dismissDialog("Managing Output Products"); // bz (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,262 MB. GUI used memory: 87 MB. Current time: 10/6/26, 3:35:04 PM CLST
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cs)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (ds, cs)
+// Tcl Command: 'report_ip_status -name ip_status '
+// Tcl Message: report_ip_status -name ip_status  

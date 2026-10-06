@@ -1,0 +1,198 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Oct  3 16:03:30 2026
+# Process ID: 44024
+# Current directory: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16744 C:\Users\sbast\Desktop\PROYECTO01_SEP\P1_SEBA\simon_says_debugging\simon_says_debugging.xpr
+# Log file: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/vivado.log
+# Journal file: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/simon_says_debugging' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IPCORES_P1'; using path 'C:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1076.188 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd}
+Successfully read diagram <simon_says_debug> from BD file <C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1076.332 ; gain = 0.145
+set_property  ip_repo_paths  {c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1 C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:simon_says:1.0 simon_says_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:Simple_RAM:1.0 Simple_RAM_0
+endgroup
+set_property location {1 127 13} [get_bd_cells Simple_RAM_0]
+set_property location {1 125 -2} [get_bd_cells Simple_RAM_0]
+make_wrapper -files [get_files C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd] -top
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/simon_says_0/clk
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd 
+ERROR: [Common 17-39] 'make_wrapper' failed due to earlier errors.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0
+endgroup
+set_property location {2 361 -112} [get_bd_cells vio_0]
+set_property location {1 363 160} [get_bd_cells Simple_RAM_0]
+set_property -dict [list CONFIG.C_EN_PROBE_IN_ACTIVITY {0} CONFIG.C_NUM_PROBE_IN {0}] [get_bd_cells vio_0]
+set_property location {1 402 26} [get_bd_cells Simple_RAM_0]
+connect_bd_net [get_bd_pins Simple_RAM_0/data_out] [get_bd_pins simon_says_0/data_in]
+set_property location {2 646 20} [get_bd_cells simon_says_0]
+set_property location {2 651 -64} [get_bd_cells simon_says_0]
+startgroup
+make_bd_pins_external  [get_bd_pins vio_0/clk]
+endgroup
+set_property name clk [get_bd_ports clk_0]
+add_files -fileset constrs_1 -norecurse C:/Users/sbast/Desktop/PROYECTO01_SEP/Zybo-Z7-Master.xdc
+set_property location {0.5 175 -107} [get_bd_cells vio_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:Btn_Debouncer:1.0 Btn_Debouncer_0
+endgroup
+set_property location {2 301 7} [get_bd_cells Btn_Debouncer_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins Btn_Debouncer_0/clk]
+startgroup
+make_bd_pins_external  [get_bd_pins Btn_Debouncer_0/button]
+endgroup
+set_property name btn [get_bd_ports button_0]
+export_ip_user_files -of_objects  [get_files C:/Users/sbast/Desktop/PROYECTO01_SEP/Zybo-Z7-Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/sbast/Desktop/PROYECTO01_SEP/Zybo-Z7-Master.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/Zybo-Z7-Master.xdc
+set_property location {2 582 10} [get_bd_cells Simple_RAM_0]
+connect_bd_net [get_bd_pins Btn_Debouncer_0/btn_deb] [get_bd_pins simon_says_0/btn]
+connect_bd_net [get_bd_pins Simple_RAM_0/address] [get_bd_pins simon_says_0/mem_addr]
+startgroup
+make_bd_pins_external  [get_bd_pins simon_says_0/leds]
+endgroup
+set_property name leds [get_bd_ports leds_0]
+set_property name led [get_bd_ports leds]
+connect_bd_net [get_bd_ports clk] [get_bd_pins simon_says_0/clk]
+connect_bd_net [get_bd_pins vio_0/probe_out0] [get_bd_pins simon_says_0/difficult]
+startgroup
+set_property -dict [list CONFIG.C_PROBE_OUT0_WIDTH {2} CONFIG.C_NUM_PROBE_OUT {2}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins vio_0/probe_out1] [get_bd_pins simon_says_0/start_game]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+endgroup
+set_property location {3.5 963 152} [get_bd_cells ila_0]
+set_property location {2.5 849 147} [get_bd_cells ila_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE4_WIDTH {5} CONFIG.C_PROBE3_WIDTH {4} CONFIG.C_PROBE1_WIDTH {4} CONFIG.C_PROBE0_WIDTH {2} CONFIG.C_NUM_OF_PROBES {5} CONFIG.C_ENABLE_ILA_AXI_MON {false} CONFIG.C_MONITOR_TYPE {Native}] [get_bd_cells ila_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins ila_0/clk]
+connect_bd_net [get_bd_pins ila_0/probe0] [get_bd_pins vio_0/probe_out0]
+connect_bd_net [get_bd_pins ila_0/probe1] [get_bd_pins Simple_RAM_0/data_out]
+connect_bd_net [get_bd_pins ila_0/probe2] [get_bd_pins vio_0/probe_out1]
+connect_bd_net [get_bd_pins ila_0/probe3] [get_bd_pins simon_says_0/leds]
+connect_bd_net [get_bd_pins ila_0/probe4] [get_bd_pins simon_says_0/mem_addr]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {6}] [get_bd_cells ila_0]
+endgroup
+connect_bd_net [get_bd_pins simon_says_0/back_to_menu] [get_bd_pins ila_0/probe5]
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd] -top
+INFO: [BD 41-1662] The design 'simon_says_debug.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\sbast\Desktop\PROYECTO01_SEP\P1_SEBA\simon_says_debugging\simon_says_debugging.srcs\sources_1\bd\simon_says_debug\simon_says_debug.bd> 
+Wrote  : <C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ui/bd_5354c1c5.ui> 
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/Simple_RAM_0/address'(4) to pin '/simon_says_0/mem_addr'(5) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/synth/simon_says_debug.vhd
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/Simple_RAM_0/address'(4) to pin '/simon_says_0/mem_addr'(5) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/sim/simon_says_debug.vhd
+VHDL Output written to : C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/hdl/simon_says_debug_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1450.977 ; gain = 135.621
+add_files -norecurse C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/hdl/simon_says_debug_wrapper.vhd
+regenerate_bd_layout
+regenerate_bd_layout
+set_property location {2 408 128} [get_bd_cells simon_says_0]
+set_property location {2 413 157} [get_bd_cells simon_says_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {2 413 157} [get_bd_cells simon_says_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 408 128} [get_bd_cells simon_says_0]'
+reset_target all [get_files  C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd]
+INFO: [BD 41-1662] The design 'simon_says_debug.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\sbast\Desktop\PROYECTO01_SEP\P1_SEBA\simon_says_debugging\simon_says_debugging.srcs\sources_1\bd\simon_says_debug\simon_says_debug.bd> 
+Wrote  : <C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ui/bd_5354c1c5.ui> 
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/Simple_RAM_0/address'(4) to pin '/simon_says_0/mem_addr'(5) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/synth/simon_says_debug.vhd
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/Simple_RAM_0/address'(4) to pin '/simon_says_0/mem_addr'(5) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/sim/simon_says_debug.vhd
+VHDL Output written to : C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/hdl/simon_says_debug_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block simon_says_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Simple_RAM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Btn_Debouncer_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/ip/simon_says_debug_ila_0_0/simon_says_debug_ila_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+Exporting to file C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/hw_handoff/simon_says_debug.hwh
+Generated Block Design Tcl file C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/hw_handoff/simon_says_debug_bd.tcl
+Generated Hardware Definition File C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/synth/simon_says_debug.hwdef
+catch { config_ip_cache -export [get_ips -all simon_says_debug_simon_says_0_0] }
+catch { config_ip_cache -export [get_ips -all simon_says_debug_Simple_RAM_0_0] }
+catch { config_ip_cache -export [get_ips -all simon_says_debug_vio_0_0] }
+catch { config_ip_cache -export [get_ips -all simon_says_debug_Btn_Debouncer_0_0] }
+catch { config_ip_cache -export [get_ips -all simon_says_debug_ila_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd]
+launch_runs simon_says_debug_simon_says_0_0_synth_1 simon_says_debug_Simple_RAM_0_0_synth_1 simon_says_debug_vio_0_0_synth_1 simon_says_debug_Btn_Debouncer_0_0_synth_1 simon_says_debug_ila_0_0_synth_1 -jobs 12
+[Sat Oct  3 16:16:25 2026] Launched simon_says_debug_simon_says_0_0_synth_1, simon_says_debug_Simple_RAM_0_0_synth_1, simon_says_debug_vio_0_0_synth_1, simon_says_debug_Btn_Debouncer_0_0_synth_1, simon_says_debug_ila_0_0_synth_1...
+Run output will be captured here:
+simon_says_debug_simon_says_0_0_synth_1: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/simon_says_debug_simon_says_0_0_synth_1/runme.log
+simon_says_debug_Simple_RAM_0_0_synth_1: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/simon_says_debug_Simple_RAM_0_0_synth_1/runme.log
+simon_says_debug_vio_0_0_synth_1: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/simon_says_debug_vio_0_0_synth_1/runme.log
+simon_says_debug_Btn_Debouncer_0_0_synth_1: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/simon_says_debug_Btn_Debouncer_0_0_synth_1/runme.log
+simon_says_debug_ila_0_0_synth_1: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/simon_says_debug_ila_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd] -directory C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.ip_user_files -ipstatic_source_dir C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.cache/compile_simlib/modelsim} {questa=C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.cache/compile_simlib/questa} {riviera=C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.cache/compile_simlib/riviera} {activehdl=C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Sat Oct  3 16:20:13 2026] Launched synth_1...
+Run output will be captured here: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/synth_1/runme.log
+[Sat Oct  3 16:20:13 2026] Launched impl_1...
+Run output will be captured here: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.runs/impl_1/runme.log
+open_hw_manager
+ipx::edit_ip_in_project -upgrade true -name simon_says_v1_0_project -directory C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.tmp/simon_says_v1_0_project c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/simon_says/simon_says.srcs/sources_1/new/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/sbast/desktop/proyecto01_sep/p1_seba/simon_says_debugging/simon_says_debugging.tmp/simon_says_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1516.059 ; gain = 12.391
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1517.660 ; gain = 13.992
+update_compile_order -fileset sources_1
+close_project
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA'.
+report_ip_status -name ip_status
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  3 17:38:18 2026...

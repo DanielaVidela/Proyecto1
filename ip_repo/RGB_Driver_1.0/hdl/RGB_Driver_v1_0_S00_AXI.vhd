@@ -4,9 +4,8 @@ use ieee.numeric_std.all;
 
 entity RGB_Driver_v1_0_S00_AXI is
 	generic (
-	   
 		-- Users to add parameters here
-        COUNTER_MAX : integer := 125_000;
+        counter_MAX : integer := 125_000;
 		-- User parameters ends
 		-- Do not modify the parameters beyond this line
 
@@ -16,13 +15,12 @@ entity RGB_Driver_v1_0_S00_AXI is
 		C_S_AXI_ADDR_WIDTH	: integer	:= 4
 	);
 	port (
-	    -- Users to add ports here
-	    clk : in std_logic;
-	    difficulty: in std_logic_vector (1 downto 0);
-	    RGB_R : out std_logic;
-	    RGB_G : out std_logic;
-	    RGB_B : out std_logic;
-
+		-- Users to add ports here
+        clk : in std_logic;
+        difficulty : in std_logic_vector (1 downto 0);
+        RGB_R : out std_logic;
+        RGB_G : out std_logic;
+        RGB_B : out std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -407,7 +405,7 @@ begin
     end if;
     end process;
     
-    process(difficulty)
+    process(difficulty, slv_reg0, slv_reg1, slv_reg2, slv_reg3)
     begin
     case difficulty is
         when "00" =>
@@ -430,8 +428,8 @@ begin
     end process;
     
     RGB_R <= '1' when (buff_R >= counter) else '0';
-    RGB_R <= '1' when (buff_G >= counter) else '0';
-    RGB_R <= '1' when (buff_B >= counter) else '0';    
+    RGB_G <= '1' when (buff_G >= counter) else '0';
+    RGB_B <= '1' when (buff_B >= counter) else '0';
 	-- User logic ends
 
 end arch_imp;

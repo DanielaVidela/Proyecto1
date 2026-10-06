@@ -34,7 +34,8 @@ architecture Behavioral of MUX_VIO is
 
 begin
 
-process(sel) begin
+process(sel, enable_a, game_type_a, controls_a, ready_a, enable_b, game_type_b, controls_b, ready_b)
+begin
         if sel = '0' then
             enable_out <= enable_a;
             game_type_out <= game_type_a;

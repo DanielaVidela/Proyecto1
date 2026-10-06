@@ -1,8 +1,8 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Fri Oct  2 21:17:34 2026
---Host        : sebastian-pc running 64-bit major release  (build 9200)
+--Date        : Tue Oct  6 10:33:13 2026
+--Host        : DESKTOP-5QP58O6 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
 --Purpose     : IP block netlist
@@ -13,6 +13,9 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1_wrapper is
   port (
+    RGB_B : out STD_LOGIC;
+    RGB_G : out STD_LOGIC;
+    RGB_R : out STD_LOGIC;
     btn : in STD_LOGIC_VECTOR ( 3 downto 0 );
     clk : in STD_LOGIC;
     led : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -25,13 +28,19 @@ architecture STRUCTURE of design_1_wrapper is
   port (
     clk : in STD_LOGIC;
     btn : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    led : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    sw : in STD_LOGIC_VECTOR ( 3 downto 0 )
+    sw : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    RGB_R : out STD_LOGIC;
+    RGB_G : out STD_LOGIC;
+    RGB_B : out STD_LOGIC;
+    led : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component design_1;
 begin
 design_1_i: component design_1
      port map (
+      RGB_B => RGB_B,
+      RGB_G => RGB_G,
+      RGB_R => RGB_R,
       btn(3 downto 0) => btn(3 downto 0),
       clk => clk,
       led(3 downto 0) => led(3 downto 0),

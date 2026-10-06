@@ -54,12 +54,14 @@ begin
     
     out_data <= shift_reg(31);
     
-    process(clk)
+    process(clk, channel_counter, neg_edge, data_value, shift_reg)
     begin
-        if (channel_counter = 15 and neg_edge = '1') then
-            shift_reg <= data_value & data_value;
-        elsif (neg_edge = '1') then
-            shift_reg <= shift_reg(30 downto 0) & '0';
+        if rising_edge(clk) then
+            if (channel_counter = 15 and neg_edge = '1') then
+                shift_reg <= data_value & data_value;
+            elsif (neg_edge = '1') then
+                shift_reg <= shift_reg(30 downto 0) & '0';
+            end if;
         end if;
     end process;
     

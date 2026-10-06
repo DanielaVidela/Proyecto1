@@ -41,7 +41,7 @@ end Mult2;
 architecture Behavioral of Mult2 is
 
 begin
-    process(selector)
+    process(selector, in1, in2)
     begin
         case selector is
         

@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Sep 26 09:55:58 2026
+# Process ID: 14204
+# Current directory: C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30064 C:\Users\sbast\Desktop\Proyecto1-main_4.0\Proyecto1-main\IPCORES_P1\State_Macine_P1\State_Macine_P1.xpr
+# Log file: C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/vivado.log
+# Journal file: C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/State_Macine_P1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1075.043 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 26 10:08:36 2026...

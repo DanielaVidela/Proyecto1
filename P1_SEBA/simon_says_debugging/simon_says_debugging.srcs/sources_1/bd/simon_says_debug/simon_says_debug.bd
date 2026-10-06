@@ -1,0 +1,214 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD29AFC7B813BD218",
+      "device": "xc7z010clg400-1",
+      "name": "simon_says_debug",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Btn_Debouncer_0": "",
+      "ila_0": "",
+      "vio_0": "",
+      "simon_v3_0": "",
+      "Simple_RAM_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "simon_says_debug_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "btn": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "led": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "Btn_Debouncer_0": {
+        "vlnv": "xilinx.com:user:Btn_Debouncer:1.0",
+        "xci_name": "simon_says_debug_Btn_Debouncer_0_0"
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "simon_says_debug_ila_0_0",
+        "parameters": {
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "10"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "2"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE4_WIDTH": {
+            "value": "5"
+          },
+          "C_PROBE6_WIDTH": {
+            "value": "5"
+          },
+          "C_PROBE7_WIDTH": {
+            "value": "5"
+          },
+          "C_PROBE8_WIDTH": {
+            "value": "6"
+          },
+          "C_PROBE9_WIDTH": {
+            "value": "6"
+          }
+        }
+      },
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "simon_says_debug_vio_0_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "0"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "2"
+          },
+          "C_PROBE_OUT0_WIDTH": {
+            "value": "2"
+          }
+        }
+      },
+      "simon_v3_0": {
+        "vlnv": "xilinx.com:user:simon_v3:1.0",
+        "xci_name": "simon_says_debug_simon_v3_0_0"
+      },
+      "Simple_RAM_0": {
+        "vlnv": "xilinx.com:user:Simple_RAM:1.0",
+        "xci_name": "simon_says_debug_Simple_RAM_0_1"
+      }
+    },
+    "nets": {
+      "Simple_RAM_0_data_out": {
+        "ports": [
+          "Simple_RAM_0/data_out",
+          "ila_0/probe1",
+          "simon_v3_0/data_in"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "Btn_Debouncer_0/clk",
+          "ila_0/clk",
+          "vio_0/clk",
+          "simon_v3_0/clk"
+        ]
+      },
+      "button_0_1": {
+        "ports": [
+          "btn",
+          "Btn_Debouncer_0/button"
+        ]
+      },
+      "simon_says_0_mem_addr": {
+        "ports": [
+          "simon_v3_0/mem_addr",
+          "ila_0/probe4",
+          "Simple_RAM_0/address"
+        ]
+      },
+      "simon_says_0_leds": {
+        "ports": [
+          "simon_v3_0/leds",
+          "led",
+          "ila_0/probe3"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "ila_0/probe2",
+          "simon_v3_0/start_game"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "ila_0/probe0",
+          "simon_v3_0/difficult"
+        ]
+      },
+      "Btn_Debouncer_0_btn_deb": {
+        "ports": [
+          "Btn_Debouncer_0/btn_deb",
+          "simon_v3_0/btn"
+        ]
+      },
+      "simon_v3_0_back_to_menu": {
+        "ports": [
+          "simon_v3_0/back_to_menu",
+          "ila_0/probe5"
+        ]
+      },
+      "simon_v3_0_index_r_ila": {
+        "ports": [
+          "simon_v3_0/index_r_ila",
+          "ila_0/probe6"
+        ]
+      },
+      "simon_v3_0_nxt_index_ila": {
+        "ports": [
+          "simon_v3_0/nxt_index_ila",
+          "ila_0/probe7"
+        ]
+      },
+      "simon_v3_0_level_r_ila": {
+        "ports": [
+          "simon_v3_0/level_r_ila",
+          "ila_0/probe8"
+        ]
+      },
+      "simon_v3_0_nxt_level_ila": {
+        "ports": [
+          "simon_v3_0/nxt_level_ila",
+          "ila_0/probe9"
+        ]
+      }
+    }
+  }
+}

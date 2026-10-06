@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Oct  3 16:02:51 2026
+# Process ID: 40320
+# Current directory: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12268 C:\Users\sbast\Desktop\PROYECTO01_SEP\P1_SEBA\simon_says_debugging\simon_says_debugging.xpr
+# Log file: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/vivado.log
+# Journal file: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging\vivado.jou
+#-----------------------------------------------------------
+start_gui
+ERROR: [Common 17-190] Invalid Tcl eval of 'open_project C:/Users/sbast/Desktop/SEP/AYU02-ALU/Ay02_BD/Ay02_BD.xpr' during processing of event '50'.
+ERROR: [Common 17-190] Invalid Tcl eval of 'open_project C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.xpr' during processing of event '326'.
+ERROR: [Common 17-39] 'rdi::open_ppr_or_dcp' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  3 16:03:28 2026...

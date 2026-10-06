@@ -1,0 +1,122 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Oct  3 16:03:30 2026
+# Process ID: 44024
+# Current directory: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16744 C:\Users\sbast\Desktop\PROYECTO01_SEP\P1_SEBA\simon_says_debugging\simon_says_debugging.xpr
+# Log file: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/vivado.log
+# Journal file: C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd}
+set_property  ip_repo_paths  {c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1 C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:simon_says:1.0 simon_says_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:Simple_RAM:1.0 Simple_RAM_0
+endgroup
+set_property location {1 127 13} [get_bd_cells Simple_RAM_0]
+set_property location {1 125 -2} [get_bd_cells Simple_RAM_0]
+make_wrapper -files [get_files C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd] -top
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0
+endgroup
+set_property location {2 361 -112} [get_bd_cells vio_0]
+set_property location {1 363 160} [get_bd_cells Simple_RAM_0]
+set_property -dict [list CONFIG.C_EN_PROBE_IN_ACTIVITY {0} CONFIG.C_NUM_PROBE_IN {0}] [get_bd_cells vio_0]
+set_property location {1 402 26} [get_bd_cells Simple_RAM_0]
+connect_bd_net [get_bd_pins Simple_RAM_0/data_out] [get_bd_pins simon_says_0/data_in]
+set_property location {2 646 20} [get_bd_cells simon_says_0]
+set_property location {2 651 -64} [get_bd_cells simon_says_0]
+startgroup
+make_bd_pins_external  [get_bd_pins vio_0/clk]
+endgroup
+set_property name clk [get_bd_ports clk_0]
+add_files -fileset constrs_1 -norecurse C:/Users/sbast/Desktop/PROYECTO01_SEP/Zybo-Z7-Master.xdc
+set_property location {0.5 175 -107} [get_bd_cells vio_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:Btn_Debouncer:1.0 Btn_Debouncer_0
+endgroup
+set_property location {2 301 7} [get_bd_cells Btn_Debouncer_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins Btn_Debouncer_0/clk]
+startgroup
+make_bd_pins_external  [get_bd_pins Btn_Debouncer_0/button]
+endgroup
+set_property name btn [get_bd_ports button_0]
+export_ip_user_files -of_objects  [get_files C:/Users/sbast/Desktop/PROYECTO01_SEP/Zybo-Z7-Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/sbast/Desktop/PROYECTO01_SEP/Zybo-Z7-Master.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/Zybo-Z7-Master.xdc
+set_property location {2 582 10} [get_bd_cells Simple_RAM_0]
+connect_bd_net [get_bd_pins Btn_Debouncer_0/btn_deb] [get_bd_pins simon_says_0/btn]
+connect_bd_net [get_bd_pins Simple_RAM_0/address] [get_bd_pins simon_says_0/mem_addr]
+startgroup
+make_bd_pins_external  [get_bd_pins simon_says_0/leds]
+endgroup
+set_property name leds [get_bd_ports leds_0]
+set_property name led [get_bd_ports leds]
+connect_bd_net [get_bd_ports clk] [get_bd_pins simon_says_0/clk]
+connect_bd_net [get_bd_pins vio_0/probe_out0] [get_bd_pins simon_says_0/difficult]
+startgroup
+set_property -dict [list CONFIG.C_PROBE_OUT0_WIDTH {2} CONFIG.C_NUM_PROBE_OUT {2}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins vio_0/probe_out1] [get_bd_pins simon_says_0/start_game]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+endgroup
+set_property location {3.5 963 152} [get_bd_cells ila_0]
+set_property location {2.5 849 147} [get_bd_cells ila_0]
+set_property -dict [list CONFIG.C_PROBE4_WIDTH {5} CONFIG.C_PROBE3_WIDTH {4} CONFIG.C_PROBE1_WIDTH {4} CONFIG.C_PROBE0_WIDTH {2} CONFIG.C_NUM_OF_PROBES {5} CONFIG.C_ENABLE_ILA_AXI_MON {false} CONFIG.C_MONITOR_TYPE {Native}] [get_bd_cells ila_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins ila_0/clk]
+connect_bd_net [get_bd_pins ila_0/probe0] [get_bd_pins vio_0/probe_out0]
+connect_bd_net [get_bd_pins ila_0/probe1] [get_bd_pins Simple_RAM_0/data_out]
+connect_bd_net [get_bd_pins ila_0/probe2] [get_bd_pins vio_0/probe_out1]
+connect_bd_net [get_bd_pins ila_0/probe3] [get_bd_pins simon_says_0/leds]
+connect_bd_net [get_bd_pins ila_0/probe4] [get_bd_pins simon_says_0/mem_addr]
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {6}] [get_bd_cells ila_0]
+endgroup
+connect_bd_net [get_bd_pins simon_says_0/back_to_menu] [get_bd_pins ila_0/probe5]
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd] -top
+add_files -norecurse C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/hdl/simon_says_debug_wrapper.vhd
+regenerate_bd_layout
+regenerate_bd_layout
+set_property location {2 408 128} [get_bd_cells simon_says_0]
+set_property location {2 413 157} [get_bd_cells simon_says_0]
+undo
+undo
+reset_target all [get_files  C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd]
+catch { config_ip_cache -export [get_ips -all simon_says_debug_simon_says_0_0] }
+catch { config_ip_cache -export [get_ips -all simon_says_debug_Simple_RAM_0_0] }
+catch { config_ip_cache -export [get_ips -all simon_says_debug_vio_0_0] }
+catch { config_ip_cache -export [get_ips -all simon_says_debug_Btn_Debouncer_0_0] }
+catch { config_ip_cache -export [get_ips -all simon_says_debug_ila_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd]
+launch_runs simon_says_debug_simon_says_0_0_synth_1 simon_says_debug_Simple_RAM_0_0_synth_1 simon_says_debug_vio_0_0_synth_1 simon_says_debug_Btn_Debouncer_0_0_synth_1 simon_says_debug_ila_0_0_synth_1 -jobs 12
+wait_on_run simon_says_debug_simon_says_0_0_synth_1
+wait_on_run simon_says_debug_Simple_RAM_0_0_synth_1
+wait_on_run simon_says_debug_vio_0_0_synth_1
+wait_on_run simon_says_debug_Btn_Debouncer_0_0_synth_1
+wait_on_run simon_says_debug_ila_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.srcs/sources_1/bd/simon_says_debug/simon_says_debug.bd] -directory C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.ip_user_files -ipstatic_source_dir C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.cache/compile_simlib/modelsim} {questa=C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.cache/compile_simlib/questa} {riviera=C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.cache/compile_simlib/riviera} {activehdl=C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw_manager
+ipx::edit_ip_in_project -upgrade true -name simon_says_v1_0_project -directory C:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/simon_says_debugging/simon_says_debugging.tmp/simon_says_v1_0_project c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/simon_says/simon_says.srcs/sources_1/new/component.xml
+update_compile_order -fileset sources_1
+close_project
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>simon_says_debug_Simple_RAM_0_1</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>Simple_RAM</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sun Oct 04 20:26:34 UTC 2026</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:fca87ceb</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:fca87ceb</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesiswrapper</spirit:name>
+        <spirit:displayName>VHDL Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>simon_says_debug_Simple_RAM_0_1</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sun Oct 04 20:26:34 UTC 2026</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:fca87ceb</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>Simple_RAM</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sun Oct 04 20:26:34 UTC 2026</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:f04cbbcd</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsimulationwrapper</spirit:name>
+        <spirit:displayName>VHDL Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>simon_says_debug_Simple_RAM_0_1</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sun Oct 04 20:26:34 UTC 2026</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:f04cbbcd</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sun Oct 04 20:27:04 UTC 2026</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:fca87ceb</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>address</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="5">0x00</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>data_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>MEM_LEN</spirit:name>
+        <spirit:displayName>Mem Len</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.MEM_LEN">32</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/a71b/Simple_RAM.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/simon_says_debug_Simple_RAM_0_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/a71b/Simple_RAM.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/simon_says_debug_Simple_RAM_0_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>simon_says_debug_Simple_RAM_0_1.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>simon_says_debug_Simple_RAM_0_1_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>simon_says_debug_Simple_RAM_0_1_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>simon_says_debug_Simple_RAM_0_1_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>simon_says_debug_Simple_RAM_0_1_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>Simple_RAM_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>MEM_LEN</spirit:name>
+      <spirit:displayName>Mem Len</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MEM_LEN">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">simon_says_debug_Simple_RAM_0_1</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>Simple_RAM_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>6</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3aa5294a_ARCHIVE_LOCATION">c:/users/sbast/desktop/proyecto01_sep/p1_seba/ip_cores_seba/simple_ram/simple_ram.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dfcef94_ARCHIVE_LOCATION">c:/users/sbast/desktop/proyecto01_sep/p1_seba/ip_cores_seba/simple_ram/simple_ram.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@141b7352_ARCHIVE_LOCATION">c:/users/sbast/desktop/proyecto01_sep/p1_seba/ip_cores_seba/simple_ram/simple_ram.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a4f1788_ARCHIVE_LOCATION">c:/users/sbast/desktop/proyecto01_sep/p1_seba/ip_cores_seba/simple_ram/simple_ram.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ae156dc_ARCHIVE_LOCATION">c:/users/sbast/desktop/proyecto01_sep/p1_seba/ip_cores_seba/simple_ram/simple_ram.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@514dac28_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18a33ccb_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c67254d_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3328e4a0_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38262_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7958bf58_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75e6a5f9_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14cd2c3f_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@330cf3c6_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24dfd22d_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@711d82a8_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57b35cbf_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@294ba47b_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38f0c66b_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5deccdc1_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30f92e9b_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63ad9572_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e737d7f_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67960038_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40d9dedc_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4527fb4d_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2725e394_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53139d29_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c189ae7_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e2cfc03_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ac0f0cf_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fc4bb2a_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2992b9c_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62cb491c_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@100db272_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fd63dd9_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@291def8_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/P1_SEBA/IP_CORES_SEBA/Simple_RAM/Simple_RAM.srcs/sources_1/new</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c28d934a"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="fa5cf5bd"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="63db1e5b"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="ad642165"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

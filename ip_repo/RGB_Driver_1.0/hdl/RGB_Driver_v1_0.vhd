@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity RGB_Driver_v1_0 is
 	generic (
 		-- Users to add parameters here
-        COUNTER_MAX : integer := 125_000;
+        counter_MAX : integer := 125_000;
 		-- User parameters ends
 		-- Do not modify the parameters beyond this line
 
@@ -17,10 +17,10 @@ entity RGB_Driver_v1_0 is
 	port (
 		-- Users to add ports here
         clk : in std_logic;
-	    difficulty: in std_logic_vector (1 downto 0);
-	    RGB_R : out std_logic;
-	    RGB_G : out std_logic;
-	    RGB_B : out std_logic;
+        difficulty : in std_logic_vector (1 downto 0);
+        RGB_R : out std_logic;
+        RGB_G : out std_logic;
+        RGB_B : out std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -55,16 +55,16 @@ architecture arch_imp of RGB_Driver_v1_0 is
 	-- component declaration
 	component RGB_Driver_v1_0_S00_AXI is
 		generic (
-		COUNTER_MAX : integer := 125_000;
+		counter_MAX : integer := 125_000;
 		C_S_AXI_DATA_WIDTH	: integer	:= 32;
 		C_S_AXI_ADDR_WIDTH	: integer	:= 4
 		);
 		port (
 		clk : in std_logic;
-	    difficulty: in std_logic_vector (1 downto 0);
-	    RGB_R : out std_logic;
-	    RGB_G : out std_logic;
-	    RGB_B : out std_logic;
+        difficulty : in std_logic_vector (1 downto 0);
+        RGB_R : out std_logic;
+        RGB_G : out std_logic;
+        RGB_B : out std_logic;
 		S_AXI_ACLK	: in std_logic;
 		S_AXI_ARESETN	: in std_logic;
 		S_AXI_AWADDR	: in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
@@ -94,16 +94,16 @@ begin
 -- Instantiation of Axi Bus Interface S00_AXI
 RGB_Driver_v1_0_S00_AXI_inst : RGB_Driver_v1_0_S00_AXI
 	generic map (
-	    COUNTER_MAX => COUNTER_MAX,
+	    counter_MAX => counter_MAX,
 		C_S_AXI_DATA_WIDTH	=> C_S00_AXI_DATA_WIDTH,
 		C_S_AXI_ADDR_WIDTH	=> C_S00_AXI_ADDR_WIDTH
 	)
 	port map (
 	    clk => clk,
-	    difficulty => difficulty,
-	    RGB_R => RGB_R,
-	    RGB_G => RGB_G,
-	    RGB_B => RGB_B,
+        difficulty => difficulty,
+        RGB_R => RGB_R,
+        RGB_G => RGB_G,
+        RGB_B => RGB_B,
 		S_AXI_ACLK	=> s00_axi_aclk,
 		S_AXI_ARESETN	=> s00_axi_aresetn,
 		S_AXI_AWADDR	=> s00_axi_awaddr,

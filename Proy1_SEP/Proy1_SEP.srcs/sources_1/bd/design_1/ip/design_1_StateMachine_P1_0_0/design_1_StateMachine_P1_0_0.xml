@@ -210,23 +210,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>buttons</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">3</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>switches</spirit:name>
+        <spirit:name>controls</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -266,7 +250,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>StateMachine_P1_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>14</xilinx:coreRevision>
+      <xilinx:coreRevision>22</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5659fc34_ARCHIVE_LOCATION">c:/users/user/documents/proyectos vivado/p1/ipcores_p1/state_macine_p1/state_macine_p1.srcs/sources_1/new</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@30ab5db_ARCHIVE_LOCATION">c:/users/user/documents/proyectos vivado/p1/ipcores_p1/state_macine_p1/state_macine_p1.srcs/sources_1/new</xilinx:tag>
@@ -340,54 +324,121 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@44794a0d_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@16b6c5e7_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6450644c_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/P1/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4039e04b_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d5766ed_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@56ae9b0_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5676955a_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@da8a409_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@479c1436_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@130b2c35_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@50501410_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@48995388_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dbbacde_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@7543ea9b_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/Proyecto1-main_4.0/Proyecto1-main/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@50154448_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e36aec4_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ba12a75_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@707680e6_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@147bac73_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@15ae29ea_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@77488838_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d1463d8_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c055c9b_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6805b4f1_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a5305f2_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@15e11d04_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@d8ac9d3_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c098ac1_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@71a6cf31_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c686698_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@191ade0c_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@56a35041_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@322d1539_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@696027df_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@21a0eaaf_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fa4c3a3_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@254e0cbb_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@9f20748_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fac4e69_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@17ba7f2c_ARCHIVE_LOCATION">c:/Users/sbast/Desktop/PROYECTO01_SEP/Proyecto1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@32f6dc57_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@7197e072_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@735f6bca_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@54e3c707_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@71e8bada_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fb2f9af_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b257212_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@23c8af3f_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@7543f716_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@44bde346_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@650e5799_ARCHIVE_LOCATION">c:/Users/Lorenzo/OneDrive/Documentos/PRO_SEP/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c52273c_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@474a821f_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66079bb3_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@677e0c8a_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fb85050_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7eb55c33_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32bc4bda_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51b40324_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@df2adac_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c61687_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3214a0fe_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dbd820b_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41b6ac83_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@213e6d26_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78a609dc_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@420793e4_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@587ad055_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c53f89a_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50e134d4_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@166097ba_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3baa4c99_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ea70058_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f30c45b_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@709691c8_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56c006d1_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@591981dc_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/P1/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a31667a_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12815d76_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27004c8e_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34dec152_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@589c5fa_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38ebfa73_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e812bfc_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7332b569_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c78cd98_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@395acb98_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3083122d_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cb6740e_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a2231b7_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c6b1aeb_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ac5679c_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bd8a266_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d88546a_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27f57c35_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6514c1af_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6191913e_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@337c0201_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@417595c2_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63364e0e_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@151112b2_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@747f1205_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7127a9eb_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75c823b7_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21df6a34_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b757685_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69cc3e9b_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5655f01d_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@515ec54d_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d185e70_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ce60019_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13c633a2_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f24a03_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34346877_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14835f2a_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5329b099_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e7f73a5_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2939568_ARCHIVE_LOCATION">c:/Users/user/Documents/Proyectos vivado/Proyecto1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5641e6c1_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e36bb8a_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f13ffe_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53c3405e_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@265b41fa_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5af03da4_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cc6c324_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15ee807b_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c380b8b_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47af05af_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2718440a_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bcf1148_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d35cfb8_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ed0c160_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e9e6d79_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@304b0c3a_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e9f8271_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3be92bdb_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ebaee45_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cf64c8f_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e0fbc90_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74621908_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4444971c_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b411bd8_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28eb5ef5_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42c711df_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@726eac2d_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56858112_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78c02c84_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d2455f0_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aa64c01_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55b05068_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76d4e771_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dc8807f_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3567d04d_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f4a46b8_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d5f5e83_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5570389d_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68c82960_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4343b4f8_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7735de4f_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dd4bc71_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11264860_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@184537fb_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37e191a_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b5e37da_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59177e46_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b378dab_ARCHIVE_LOCATION">c:/Users/user/Documents/PV/P1_Git/IPCORES_P1/State_Macine_P1/State_Macine_P1.srcs/sources_1/new</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
@@ -404,8 +455,8 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="21e5774d"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6dee05c0"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="ebc08f0c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0c96f81c"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="ed39ea5b"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="cc414b5b"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
